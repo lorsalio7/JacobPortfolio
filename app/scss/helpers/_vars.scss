@@ -1,6 +1,6 @@
-:root {
-  --sans-serif: "Arial", "Helvetica", "Verdana", sans-serif;
-  --serif: "Times New Roman", "Georgia", "Baskerville", serif;
-  --color-white: 255 255 255;
-  --color-black: 0 0 0;
-}
+$sans-serif: "IBM Plex Sans", "Helvetica", "Verdana", sans-serif;
+$serif: "Times New Roman", "Georgia", "Baskerville", serif;
+$color-white: #fff;
+$color-black: #000;
+$cod-gray: #141313;
+$gradient: linear-gradient(273deg, #ffb147 0%, #ff6c63 50%, #b86adf 100%);

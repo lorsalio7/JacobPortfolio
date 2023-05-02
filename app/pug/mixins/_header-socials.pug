@@ -1,0 +1,5 @@
+mixin header-socials(array)
+  each item in array
+    li.header-socials__item
+      a(href= item.socialLink title= item.socialTitle).header-socials__link
+        img(src= item.socialIcon width="40" height="40")

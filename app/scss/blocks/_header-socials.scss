@@ -1,0 +1,15 @@
+.header-socials {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-socials__item:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+
+.header-socials__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+}

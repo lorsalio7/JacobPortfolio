@@ -1,0 +1,29 @@
+include ../mixins/_variables.pug
+
+block vars
+  - var pageTitle = "Main title";
+  - var htmlClass = "";
+  - var bodyClass = "";
+
+block mixins
+  include ../mixins/_site-navigation.pug
+  include ../mixins/_header-socials.pug
+
+doctype html
+html(lang="en" class= htmlClass)
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title= pageTitle
+    link(rel="shortcut icon" type="image/svg+xml" href="img/favicon.svg")
+    link(rel="shortcut icon" type="image/png" href="img/favicon.png")
+    block styles
+      link(rel="stylesheet", href="css/styles.min.css")
+  body(class= bodyClass)
+    include ../sections/_header.pug
+    block content
+    include ../sections/_footer.pug
+
+    block scripts
+      script(src="js/script.min.js")

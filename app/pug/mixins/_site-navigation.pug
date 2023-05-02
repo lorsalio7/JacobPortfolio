@@ -1,0 +1,7 @@
+mixin site-navigation(array)
+  each item in array
+    li.site-navigation__item
+      if item.activeClass
+        a(href= item.linkUrl class="site-navigation__link site-navigation__link--active")= item.linkName
+      else
+        a(href= item.linkUrl class="site-navigation__link")= item.linkName

@@ -1,0 +1,33 @@
+.site-navigation__list {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.site-navigation__item:not(:last-of-type) {
+  margin-bottom: 27px;
+}
+
+.site-navigation__link {
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-white;
+  background-size: 0 4px;
+  transition:
+    background-size 0.3s ease-in-out,
+    font-weight 0.1s ease;
+
+  @include hover-focus {
+    font-weight: 700;
+  }
+}
+
+.site-navigation__link--active {
+  padding-right: 7px;
+  font-weight: 700;
+  background: $gradient;
+  background-position: 0 50%;
+  background-size: 100% 4px;
+  background-repeat: no-repeat;
+}

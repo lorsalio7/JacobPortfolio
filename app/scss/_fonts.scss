@@ -1,2 +1,6 @@
-// @include font("$name", "$font-family", $weight);
-@include font("MontserratRegular", "Montserrat", 400);
+// @include font("$name", "$font-family", $weight, $style);
+@include font("IBMPlexSansBold", "IBM Plex Sans", 700, normal);
+@include font("IBMPlexSansBoldItalic", "IBM Plex Sans Bold Italic", 700, italic);
+@include font("IBMPlexSansMedium", "IBM Plex Sans", 500, normal);
+@include font("IBMPlexSansRegular", "IBM Plex Sans", 400, normal);
+@include font("IBMPlexSansSemiBoldItalic", "IBM Plex Sans", 600, italic);
