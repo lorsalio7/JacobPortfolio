@@ -1,0 +1,33 @@
+section.hero.fullsize
+  .hero__wrapper
+    .container.hero__content
+      .hero__text-content
+        h1.hero__title
+          | My name is
+          span  Jacob Jones...
+        p.hero__description
+          span Product Designer
+          |  based in
+          span  London
+        .hero__button
+          a(href="#contact").button
+            | Let's talk with me
+            span.button__icon-bg
+              +svg("button__icon", "arrow-ic", 24, 24)
+        ul.meta
+          li.meta__item
+            a(href="tel:+770224440505").meta__text.meta__icon.meta__icon--phone +77 022 444 05 05
+          li.meta__item
+            a(href="mailto:jacob360@gmail.com").meta__text.meta__icon.meta__icon--email jacob360@gmail.com
+      .hero__media-content
+        img(src="img/hero-image.png", width="620" height="707" alt="Photo of Jacob Jones").hero__photo
+    ul.hero-socials.hero__socials
+      li.hero-socials__item
+        a(href="#").hero-socials__link
+          img(src="img/vk-ic.svg", width="40" height="40").hero-socials__icon
+      li.hero-socials__item
+        a(href="#").hero-socials__link
+          img(src="img/dribbble-ic.svg", width="40" height="40").hero-socials__icon
+      li.hero-socials__item
+        a(href="#").hero-socials__link
+          img(src="img/ok-ic.svg", width="40" height="40").hero-socials__icon

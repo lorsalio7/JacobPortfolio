@@ -1,0 +1,83 @@
+.hero {
+  padding-left: 67px;
+}
+
+.hero__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 30px;
+  min-height: 100vh;
+}
+
+.hero__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero__text-content {
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 1;
+  padding-top: 9px;
+  padding-left: 2px;
+  max-width: 550px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -47px;
+    top: -2px;
+    z-index: -1;
+    width: 216px;
+    height: 135px;
+    background-image: url("../img/hero-decor.svg");
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 102px;
+  line-height: 90px;
+  text-transform: uppercase;
+  color: $cod-gray;
+}
+
+.hero__title span {
+  font-weight: 700;
+}
+
+.hero__description {
+  margin-top: 0;
+  margin-bottom: 48px;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+}
+
+.hero__description span {
+  font-family: "IBM Plex Sans Bold Italic", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.hero__button {
+  margin-bottom: 70px;
+}
+
+.hero__photo {
+  display: block;
+}
+
+.hero__media-content {
+  flex-grow: 0;
+  flex-shrink: 1;
+  margin-bottom: 43px;
+  padding-left: 65px;
+}

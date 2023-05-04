@@ -1,0 +1,47 @@
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.meta__item:not(:last-of-type) {
+  margin-right: 48px;
+}
+
+.meta__text {
+  font-family: "IBM Plex Sans Bold Italic", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $cod-gray;
+}
+
+.meta__icon {
+  position: relative;
+  padding-left: 44px;
+  background-position: center;
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 32px;
+    height: 32px;
+    transform: translateY(-50%);
+  }
+}
+
+.meta__icon--phone::before {
+  background-image: url("../img/telephone-ic.svg");
+}
+
+.meta__icon--email::before {
+  background-image: url("../img/email-ic.svg");
+}

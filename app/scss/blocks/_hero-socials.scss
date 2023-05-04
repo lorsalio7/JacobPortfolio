@@ -1,0 +1,37 @@
+.hero-socials {
+  position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 156px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 2px;
+    height: 131px;
+    background-color: $cod-gray;
+    opacity: 0.3;
+    transform: translateX(-50%);
+  }
+}
+
+.hero-socials__item:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.hero-socials__link {
+  display: block;
+  border: 1px solid rgba($cod-gray, 0.1);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.hero-socials__icon {
+  width: 38px;
+  height: 38px;
+  line-height: 0;
+  transform: rotate(-90deg);
+}

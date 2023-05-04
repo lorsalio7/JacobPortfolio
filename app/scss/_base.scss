@@ -9,5 +9,10 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-family: $sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
 }

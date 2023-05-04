@@ -5,11 +5,12 @@
 }
 
 .site-navigation__item:not(:last-of-type) {
-  margin-bottom: 27px;
+  margin-bottom: 20px;
 }
 
 .site-navigation__link {
   font-size: 20px;
+  line-height: 30px;
   text-decoration: none;
   text-transform: uppercase;
   color: $color-white;

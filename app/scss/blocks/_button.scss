@@ -1,0 +1,24 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid $cod-gray;
+  padding: 14px 39px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $color-white;
+  background-color: $cod-gray;
+}
+
+.button__icon-bg {
+  display: block;
+  margin-left: 8px;
+  width: 24px;
+  height: 24px;
+  background: $gradient;
+}
+
+.button__icon {
+  fill: currentcolor;
+}

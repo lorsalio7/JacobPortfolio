@@ -10,39 +10,65 @@
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body class="page__body">
-    <header class="site-header page__site-header"><a class="logo site-header__logo"><img class="logo__image" src="img/logo.svg" width="57" height="26" alt="Jacob Jones website logo"></a>
-      <nav class="site-navigation site-header__navigation">
-        <ul class="site-navigation__list">
-          <li class="site-navigation__item"><a class="site-navigation__link site-navigation__link--active" href="#home">Home</a>
-          </li>
-          <li class="site-navigation__item"><a class="site-navigation__link" href="#about">About</a>
-          </li>
-          <li class="site-navigation__item"><a class="site-navigation__link" href="#services">Services</a>
-          </li>
-          <li class="site-navigation__item"><a class="site-navigation__link" href="#works">Works</a>
-          </li>
-          <li class="site-navigation__item"><a class="site-navigation__link" href="#blogs">Blogs</a>
-          </li>
-          <li class="site-navigation__item"><a class="site-navigation__link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="site-header__bottom">
-        <ul class="header-socials site-header__socials">
-          <li class="header-socials__item"><a class="header-socials__link" href="#" title="I'm in Behance"><img src="img/behance-ic.svg" width="40" height="40"/></a></li>
-          <li class="header-socials__item"><a class="header-socials__link" href="#" title="I'm in Dribbble"><img src="img/dribbble-ic.svg" width="40" height="40"/></a></li>
-          <li class="header-socials__item"><a class="header-socials__link" href="#" title="I'm in LinkedIn"><img src="img/linkedin-ic.svg" width="40" height="40"/></a></li>
-        </ul>
-        <p class="site-header__copyright">Copyright &copy;2023 Jacob Jones. All right reserved.</p>
+    <div class="wrapper">
+      <header class="site-header page__site-header"><a class="logo site-header__logo"><img class="logo__image" src="img/logo.svg" width="57" height="26" alt="Jacob Jones website logo"></a>
+        <nav class="site-navigation site-header__navigation">
+          <ul class="site-navigation__list">
+            <li class="site-navigation__item"><a class="site-navigation__link site-navigation__link--active" href="#home">Home</a>
+            </li>
+            <li class="site-navigation__item"><a class="site-navigation__link" href="#about">About</a>
+            </li>
+            <li class="site-navigation__item"><a class="site-navigation__link" href="#services">Services</a>
+            </li>
+            <li class="site-navigation__item"><a class="site-navigation__link" href="#works">Works</a>
+            </li>
+            <li class="site-navigation__item"><a class="site-navigation__link" href="#blogs">Blogs</a>
+            </li>
+            <li class="site-navigation__item"><a class="site-navigation__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="site-header__bottom">
+          <ul class="header-socials site-header__socials">
+            <li class="header-socials__item"><a class="header-socials__link" href="#" title="I'm in Behance"><img src="img/behance-ic.svg" width="40" height="40"/></a></li>
+            <li class="header-socials__item"><a class="header-socials__link" href="#" title="I'm in Dribbble"><img src="img/dribbble-ic.svg" width="40" height="40"/></a></li>
+            <li class="header-socials__item"><a class="header-socials__link" href="#" title="I'm in LinkedIn"><img src="img/linkedin-ic.svg" width="40" height="40"/></a></li>
+          </ul>
+          <p class="site-header__copyright">Copyright &copy;2023 Jacob Jones. All right reserved.</p>
+        </div>
+      </header>
+      <div class="page__page-content">
+        <section class="hero fullsize">
+          <div class="hero__wrapper">
+            <div class="container hero__content">
+              <div class="hero__text-content">
+                <h1 class="hero__title">My name is<span> Jacob Jones...</span></h1>
+                <p class="hero__description"><span>Product Designer</span> based in<span> London</span></p>
+                <div class="hero__button"><a class="button" href="#contact">Let's talk with me<span class="button__icon-bg">
+                      <svg class="button__icon" width="24" height="24">
+                        <use xlink:href="img/sprite.svg#arrow-ic"></use>
+                      </svg></span></a></div>
+                <ul class="meta">
+                  <li class="meta__item"><a class="meta__text meta__icon meta__icon--phone" href="tel:+770224440505">+77 022 444 05 05</a></li>
+                  <li class="meta__item"><a class="meta__text meta__icon meta__icon--email" href="mailto:jacob360@gmail.com">jacob360@gmail.com</a></li>
+                </ul>
+              </div>
+              <div class="hero__media-content"><img class="hero__photo" src="img/hero-image.png" width="620" height="707" alt="Photo of Jacob Jones"></div>
+            </div>
+            <ul class="hero-socials hero__socials">
+              <li class="hero-socials__item"><a class="hero-socials__link" href="#"><img class="hero-socials__icon" src="img/vk-ic.svg" width="40" height="40"></a></li>
+              <li class="hero-socials__item"><a class="hero-socials__link" href="#"><img class="hero-socials__icon" src="img/dribbble-ic.svg" width="40" height="40"></a></li>
+              <li class="hero-socials__item"><a class="hero-socials__link" href="#"><img class="hero-socials__icon" src="img/ok-ic.svg" width="40" height="40"></a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="about fullsize">
+          <div class="container">
+            <h2 class="about__title">welcome</h2>
+          </div>
+        </section>
       </div>
-    </header>
-    <footer class="footer">This is footer change
-      <ul class="footer-list">
-        <li class="footer-list__item">li text</li>
-        <li class="footer-list__item">li text 2</li>
-        <li class="footer-list__item">li text 3</li>
-      </ul>
-    </footer>
+    </div>
     <script src="js/script.min.js"></script>
   </body>
 </html>

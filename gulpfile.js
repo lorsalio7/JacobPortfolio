@@ -163,12 +163,17 @@ function js() {
 function images() {
     return src(path.src.img)
     .pipe(newer(path.build.img))
-    .pipe(imagemin({
-      progressive: true,
-      svgoPlugins: [{ removeViewBox: false }],
-      interlaced: true,
-      optimizationLevel: 2
-    }))
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.mozjpeg({quality: 95, progressive: true}),
+      imagemin.optipng({optimizationLevel: 1}),
+      imagemin.svgo({
+        plugins: [
+          {removeViewBox: false},
+          {cleanupIDs: false}
+        ]
+      })
+    ]))
     .pipe(dest(path.build.img))
     .pipe(browsersync.stream())
 }
