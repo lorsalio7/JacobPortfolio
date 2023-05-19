@@ -23,6 +23,8 @@ html(lang="en" class= htmlClass)
       link(rel="stylesheet", href="css/styles.min.css")
   body(class= bodyClass)
     .wrapper
+      button(type="button" class="burger-button page__burger-button" aria-label="Открыть меню")
+        span.burger-button__line
       include ../sections/_header.pug
       block content
 

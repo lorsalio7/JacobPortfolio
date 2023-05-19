@@ -11,6 +11,7 @@
   </head>
   <body class="page__body">
     <div class="wrapper">
+      <button class="burger-button page__burger-button" type="button" aria-label="Открыть меню"><span class="burger-button__line"></span></button>
       <header class="site-header page__site-header"><a class="logo site-header__logo"><img class="logo__image" src="img/logo.svg" width="57" height="26" alt="Jacob Jones website logo"></a>
         <nav class="site-navigation site-header__navigation">
           <ul class="site-navigation__list">
@@ -38,7 +39,7 @@
         </div>
       </header>
       <div class="page__page-content">
-        <section class="hero fullsize">
+        <section class="hero fullsize" id="home">
           <div class="hero__wrapper">
             <div class="container hero__content">
               <div class="hero__text-content">
@@ -62,9 +63,84 @@
             </ul>
           </div>
         </section>
-        <section class="about fullsize">
-          <div class="container">
-            <h2 class="about__title">welcome</h2>
+        <section class="about fullsize" id="about">
+          <div class="container about__container">
+            <div class="about__top">
+              <header class="section-header about__section-header">
+                <h2 class="section-header__title">Nice to meet you!</h2>
+                <p class="section-header__subtitle">Welcome to...</p>
+              </header>
+              <div class="about__content">
+                <div class="about__element-1 about__element-1--center"><img class="about__photo" src="img/about-photo.png" width="413" height="410" alt="Photo of Jacob Jones with an autograph">
+                  <h3 class="about__title">Jacob Jones</h3>
+                  <p class="about__description"><span>Product Designer</span> based in<span> London</span></p><a class="button button--transparent" href="#">Download CV<span class="button__icon-bg">
+                      <svg class="button__icon" width="24" height="24">
+                        <use xlink:href="img/sprite.svg#arrow-ic"></use>
+                      </svg></span></a>
+                </div>
+                <div class="about__element-2">
+                  <ul class="meta about__meta">
+                    <li class="meta__item"><a class="meta__text meta__icon meta__icon--phone" href="tel:+770224440505">+77 022 444 05 05</a></li>
+                    <li class="meta__item">
+                      <p class="meta__text meta__icon meta__icon--contact">25 yrs</p>
+                    </li>
+                    <li class="meta__item"><a class="meta__text meta__icon meta__icon--email" href="mailto:jacob360@gmail.com">jacob360@gmail.com</a></li>
+                    <li class="meta__item">
+                      <p class="meta__text meta__icon meta__icon--pin">United kingdom, London</p>
+                    </li>
+                  </ul>
+                  <dl class="experience-list about__experience-list">
+                    <div class="experience-list__item">
+                      <dt class="experience-list__title"><span>10+</span>Years experience...</dt>
+                      <dd class="experience-list__description">Hello there! My&nbsp;name is&nbsp;<span>Jacob Jones</span>.
+                        I&nbsp;am&nbsp;a&nbsp;web designer & developer, and I&rsquo;m very passionate and dedicated to my&nbsp;work.
+                      </dd>
+                    </div>
+                    <div class="experience-list__item">
+                      <dt class="experience-list__title"><span>14</span>Clients Worldwide...</dt>
+                      <dd class="experience-list__description">With 10+ years experience as a professional a&nbsp;graphic designer,<br>
+                        I&nbsp;have acquired the skills and knowledge necessary to&nbsp;make your project a&nbsp;success.
+                      </dd>
+                    </div>
+                  </dl>
+                  <blockquote class="about__quote">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus sed sit ultrices et sed metus sollicitudin.</p>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="about__bottom">
+              <div class="about__content">
+                <div class="about__element-1">
+                  <header class="section-header section-header--white about__section-header">
+                    <h2 class="section-header__title">Experience</h2>
+                    <p class="section-header__subtitle">My experience</p>
+                  </header>
+                  <p class="about__text">Hello there! My&nbsp;name is&nbsp;Jacob Jones.<br>
+                    I&nbsp;am&nbsp;a&nbsp;web designer & developer, and I&rsquo;m very passionate and dedicated to&nbsp;my&nbsp;work.
+                  </p><a class="button" href="#">Download my resume<span class="button__icon-bg">
+                      <svg class="button__icon" width="24" height="24">
+                        <use xlink:href="img/sprite.svg#arrow-ic"></use>
+                      </svg></span></a>
+                </div>
+                <div class="about__element-2">
+                  <ul class="places-of-work">
+                    <li class="places-of-work__item">
+                      <h3 class="places-of-work__title">Lead UI/UX Designer</h3>
+                      <p class="places-of-work__place">-2018 - Present<span>-Rolling Thunder</span></p>
+                    </li>
+                    <li class="places-of-work__item">
+                      <h3 class="places-of-work__title">Senior UI/UX Designer</h3>
+                      <p class="places-of-work__place">-2018 - 2010<span>-Locost Accessories</span></p>
+                    </li>
+                    <li class="places-of-work__item">
+                      <h3 class="places-of-work__title">Junior UI/UX Designer</h3>
+                      <p class="places-of-work__place">-2008 - 2006<span>-Sagebrush</span></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>

@@ -1,0 +1,27 @@
+.section-header--white .section-header__title {
+  color: $color-white;
+}
+
+.section-header--white .section-header__subtitle {
+  color: $color-white;
+}
+
+.section-header__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: "IBM Plex Sans Bold Italic", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: $cod-gray;
+}
+
+.section-header__subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: $cod-gray;
+}

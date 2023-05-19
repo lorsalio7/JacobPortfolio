@@ -11,6 +11,13 @@
   background-color: $cod-gray;
 }
 
+.button--transparent {
+  border: 2px solid transparent;
+  text-decoration: underline;
+  color: $cod-gray;
+  background-color: transparent;
+}
+
 .button__icon-bg {
   display: block;
   margin-left: 8px;
@@ -19,6 +26,14 @@
   background: $gradient;
 }
 
+.button--transparent .button__icon-bg {
+  background: $cod-gray;
+}
+
 .button__icon {
   fill: currentcolor;
+}
+
+.button--transparent .button__icon {
+  fill: $color-white;
 }

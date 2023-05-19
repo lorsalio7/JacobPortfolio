@@ -39,6 +39,14 @@
   }
 }
 
+.hero__text-content .meta__item {
+  flex-basis: auto;
+}
+
+.hero__text-content .meta__item:first-of-type {
+  margin-right: 48px;
+}
+
 .hero__title {
   margin-top: 0;
   margin-bottom: 24px;

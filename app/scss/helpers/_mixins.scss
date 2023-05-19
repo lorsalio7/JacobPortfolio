@@ -34,10 +34,18 @@
 
 // @include hover-focus {}
 
-//@mixin px320 {
-//  @media (max-width: 320px) {
-//    @content;
-//  }
-//}
+@mixin px1124 {
+  @media (max-width: 1124px) {
+    @content;
+  }
+}
 
-// @include px320 {}
+// @include px1124 {}
+
+@mixin px2000 {
+  @media (min-width: 2000px) {
+    @content;
+  }
+}
+
+// @include px2000 {}

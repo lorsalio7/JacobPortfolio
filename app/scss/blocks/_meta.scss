@@ -7,11 +7,19 @@
   padding: 0;
 }
 
-.meta__item:not(:last-of-type) {
-  margin-right: 48px;
+.meta__item {
+  flex: 0 1 46%;
+  margin-bottom: 40px;
+}
+
+.meta__item:nth-child(1n) {
+  margin-right: 11px;
 }
 
 .meta__text {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
   font-family: "IBM Plex Sans Bold Italic", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -23,17 +31,20 @@
 .meta__icon {
   position: relative;
   padding-left: 44px;
-  background-position: center;
-  background-size: 32px 32px;
-  background-repeat: no-repeat;
 
   &::before {
     content: "";
     position: absolute;
     left: 0;
     top: 50%;
+    display: block;
+    border-radius: 50%;
     width: 32px;
     height: 32px;
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-color: rgba($cod-gray, 0.05);
     transform: translateY(-50%);
   }
 }
@@ -44,4 +55,12 @@
 
 .meta__icon--email::before {
   background-image: url("../img/email-ic.svg");
+}
+
+.meta__icon--pin::before {
+  background-image: url("../img/pin-ic.svg");
+}
+
+.meta__icon--contact::before {
+  background-image: url("../img/contact-ic.svg");
 }

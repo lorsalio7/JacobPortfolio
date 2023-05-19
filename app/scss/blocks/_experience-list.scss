@@ -1,0 +1,51 @@
+.experience-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience-list__item {
+  max-width: 315px;
+}
+
+.experience-list__item:nth-child(1) {
+  margin-right: 30px;
+}
+
+.experience-list__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+  max-width: 220px;
+  font-family: $italic-font;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: $cod-gray;
+}
+
+.experience-list__title span {
+  margin-right: 14px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.05em;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  text-transform: uppercase;
+  color: #f6605f;
+  background-image: $gradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.experience-list__description {
+  margin-left: 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: $cod-gray;
+}
+
+.experience-list__description span {
+  color: $lavender;
+}

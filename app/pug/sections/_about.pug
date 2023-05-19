@@ -1,3 +1,75 @@
-section.about.fullsize
-  .container
-    h2.about__title welcome
+section.about.fullsize#about
+  .container.about__container
+    .about__top
+      header.section-header.about__section-header
+        h2.section-header__title Nice to meet you!
+        p.section-header__subtitle Welcome to...
+      .about__content
+        .about__element-1.about__element-1--center
+          img(src="img/about-photo.png" width="413" height="410", alt="Photo of Jacob Jones with an autograph").about__photo
+          h3.about__title Jacob Jones
+          p.about__description
+            span Product Designer
+            |  based in
+            span  London
+          a(href="#").button.button--transparent
+            | Download CV
+            span.button__icon-bg
+              +svg("button__icon", "arrow-ic", 24, 24)
+        .about__element-2
+          ul.meta.about__meta
+            li.meta__item
+              a(href="tel:+770224440505").meta__text.meta__icon.meta__icon--phone +77 022 444 05 05
+            li.meta__item
+              p.meta__text.meta__icon.meta__icon--contact 25 yrs
+            li.meta__item
+              a(href="mailto:jacob360@gmail.com").meta__text.meta__icon.meta__icon--email jacob360@gmail.com
+            li.meta__item
+              p.meta__text.meta__icon.meta__icon--pin United kingdom, London
+          dl.experience-list.about__experience-list
+            .experience-list__item
+              dt.experience-list__title
+                span 10+
+                | Years experience...
+              dd.experience-list__description
+                | Hello there! My&nbsp;name is&nbsp;#[span Jacob Jones].
+                | I&nbsp;am&nbsp;a&nbsp;web designer & developer, and I&rsquo;m very passionate and dedicated to my&nbsp;work.
+            .experience-list__item
+              dt.experience-list__title
+                span 14
+                | Clients Worldwide...
+              dd.experience-list__description
+                | With 10+ years experience as a professional a&nbsp;graphic designer,#[br]
+                | I&nbsp;have acquired the skills and knowledge necessary to&nbsp;make your project a&nbsp;success.
+          blockquote.about__quote
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus sed sit ultrices et sed metus sollicitudin.
+    .about__bottom
+      .about__content
+        .about__element-1
+          header.section-header.section-header--white.about__section-header
+            h2.section-header__title Experience
+            p.section-header__subtitle My experience
+          p.about__text
+            | Hello there! My&nbsp;name is&nbsp;Jacob Jones.#[br]
+            | I&nbsp;am&nbsp;a&nbsp;web designer & developer, and I&rsquo;m very passionate and dedicated to&nbsp;my&nbsp;work.
+          a(href="#").button
+            | Download my resume
+            span.button__icon-bg
+              +svg("button__icon", "arrow-ic", 24, 24)
+        .about__element-2
+          ul.places-of-work
+            li.places-of-work__item
+              h3.places-of-work__title Lead UI/UX Designer
+              p.places-of-work__place
+                | -2018 - Present
+                span -Rolling Thunder
+            li.places-of-work__item
+              h3.places-of-work__title Senior UI/UX Designer
+              p.places-of-work__place
+                | -2018 - 2010
+                span -Locost Accessories
+            li.places-of-work__item
+              h3.places-of-work__title Junior UI/UX Designer
+              p.places-of-work__place
+                | -2008 - 2006
+                span -Sagebrush

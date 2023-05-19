@@ -1,0 +1,150 @@
+.about__container {
+  padding: 0 15px;
+}
+
+.about__top {
+  padding: 100px 0 110px;
+}
+
+.about__top .about__section-header {
+  margin-bottom: 47px;
+}
+
+.about__bottom .about__section-header {
+  margin-bottom: 25px;
+}
+
+.about__content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.about__bottom {
+  position: relative;
+  padding: 120px 115px 120px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    padding-left: calc(((-50vw - 50%) + (var(--width-header) / 2) - 8px) * -1);
+    background: $gradient;
+
+    @include px1124 {
+      padding-left: calc(((-50vw - 50%) + (var(--width-header) / 2) - 160px) * -1);
+    }
+  }
+}
+
+.about__element-1 {
+  margin-right: auto;
+  max-width: 430px;
+}
+
+.about__element-1--center {
+  text-align: center;
+}
+
+.about__element-2 {
+  max-width: 660px;
+}
+
+.about__bottom .about__element-2 {
+  flex-basis: 545px;
+}
+
+.about__experience-list {
+  margin-top: 0;
+  margin-bottom: 64px;
+}
+
+.about__photo {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.about__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.05em;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  text-transform: uppercase;
+  color: #f6605f;
+  background-image: $gradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.about__description {
+  margin-top: 0;
+  margin-bottom: 17px;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+}
+
+.about__description span {
+  font-family: $italic-font;
+}
+
+.about__meta {
+  margin-right: 0;
+  margin-bottom: 47px;
+  border-bottom: 1px solid rgba($cod-gray, 0.2);
+  padding-top: 8px;
+}
+
+.about__meta .meta__icon {
+  padding-left: 52px;
+
+  &::before {
+    width: 40px;
+    height: 40px;
+    background-size: 20px;
+  }
+}
+
+.about__quote {
+  margin: 0;
+  padding: 40px 40px 40px 116px;
+  background-image: url("../img/double-quotes-ic.svg");
+  background-position: top 40px left 40px;
+  background-size: 64px 64px;
+  background-repeat: no-repeat;
+  background-color: $cod-gray;
+}
+
+.about__quote p {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "IBM Plex Sans Italic", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 32px;
+  color: $color-white;
+}
+
+.about__quote p::before {
+  content: "“";
+}
+
+.about__quote p::after {
+  content: "”";
+}
+
+.about__text {
+  margin-top: 0;
+  margin-bottom: 47px;
+  font-size: 18px;
+  line-height: 28px;
+  color: $color-white;
+}

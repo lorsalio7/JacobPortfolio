@@ -1,0 +1,47 @@
+.places-of-work {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.places-of-work__item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba($color-white, 0.2);
+}
+
+.places-of-work__item:not(:last-of-type) {
+  margin-bottom: 41px;
+}
+
+.places-of-work__title {
+  order: 2;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.places-of-work__place {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "IBM Plex Sans Bold Italic", sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 24px;
+  color: $color-white;
+}
+
+.places-of-work__place span {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-white;
+}
