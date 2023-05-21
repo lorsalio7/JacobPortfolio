@@ -1,0 +1,106 @@
+.accordion {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding-left: 0;
+}
+
+.accordion__item {
+  border-bottom: 1px solid rgba($cod-gray, 0.2);
+}
+
+.accordion__button {
+  position: relative;
+  border: none;
+  padding: 33px 0;
+  width: 100%;
+  text-align: left;
+  background-color: $color-white;
+  cursor: pointer;
+}
+
+.accordion__button::before {
+  content: "";
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  display: block;
+  border-radius: 1px;
+  width: 26px;
+  height: 2px;
+  background-color: $cod-gray;
+  transform: translateY(0);
+}
+
+.accordion__button::after {
+  content: "";
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  display: block;
+  border-radius: 1px;
+  width: 26px;
+  height: 2px;
+  background-color: $cod-gray;
+  transform: rotate(-90deg) translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.accordion__button--active::after {
+  transform: rotate(0) translateY(0);
+}
+
+.accordion__button span {
+  position: relative;
+  padding-left: 49px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: $cod-gray;
+}
+
+.accordion__button span::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 19px;
+  border-radius: 4px;
+  width: 10px;
+  height: 10px;
+  background-color: $cod-gray;
+}
+
+.accordion__button--active span::before {
+  background-color: $lavender;
+}
+
+.accordion__button--active span {
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-image: $gradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.accordion__panel {
+  overflow: hidden;
+  margin-left: auto;
+  max-width: 660px;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+
+.accordion__panel p {
+  margin-top: 0;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba($cod-gray, 0.8);
+}
+
+.accordion__panel img {
+  display: block;
+  height: 100%;
+  max-width: 660px;
+  object-fit: contain;
+}
