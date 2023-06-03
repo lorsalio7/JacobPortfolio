@@ -1,0 +1,64 @@
+section.works.fullsize#works
+  .work
+    .container
+      header.section-header.work__section-header
+        h2.section-header__title Work
+        p.section-header__subtitle Recent Project
+      .work__wrapper
+        ul.work__list
+          +work-items(workItems)
+        .work__button-wrapper
+          button(type="button").button.work__button
+            | Load more
+            span.button__icon-bg
+              +svg("button__icon", "arrow-ic", 24, 24)
+  .testimonial
+    .container
+      .testimonial__container
+        header.section-header.section-header--center.section-header--white.testimonial__section-header
+          h2.section-header__title Testimonial
+          p.section-header__subtitle What they says
+        .testimonial__slider.testimonial-slider.splide
+          .splide__track.testimonial-slider__track
+            .splide__arrows.testimonial-slider__buttons
+              .testimonial-slider__inner-buttons
+                button(type="button").splide__arrow--prev.testimonial-slider__button.testimonial-slider__prev-button
+                  +svg("testimonial-slider__arrow", "left-arrow-ic", 23, 16)
+                button(type="button").splide__arrow--next.testimonial-slider__button.testimonial-slider__next-button
+                  +svg("testimonial-slider__arrow", "right-arrow-ic", 23, 16)
+            ul.splide__list.testimonial-slider__list
+              li.splide__slide.testimonial-slider__slide
+                .testimonial-slider__row
+                  .testimonial-slider__image-wrapper
+                    img(src="img/first-slide-image.png", width="345" height="477" alt="Photo Larry Diamond").testimonial-slider__image
+                  blockquote.testimonial-slider__blockquote
+                    p.testimonial-slider__text File storage made easy – including powerful features you won’t find anywhere else. Whether you’re.
+                    cite.testimonial-slider__author Larry Diamond
+                    p.testimonial-slider__position Chief Executive Officer, Besnik
+              li.splide__slide.testimonial-slider__slide
+                .testimonial-slider__row
+                  .testimonial-slider__image-wrapper
+                    img(src="img/second-slide-image.png", width="345" height="477" alt="Photo Larry Diamond").testimonial-slider__image
+                  blockquote.testimonial-slider__blockquote
+                    p.testimonial-slider__text File storage made easy – including powerful features you won’t find anywhere else. Whether you’re.
+                    cite.testimonial-slider__author Linda Arrington
+                    p.testimonial-slider__position Internet Marketing Manager, Dooley Inc
+              li.splide__slide.testimonial-slider__slide
+                .testimonial-slider__row
+                  .testimonial-slider__image-wrapper
+                    img(src="img/third-slide-image.png", width="345" height="477" alt="Photo Larry Diamond").testimonial-slider__image
+                  blockquote.testimonial-slider__blockquote
+                    p.testimonial-slider__text File storage made easy – including powerful features you won’t find anywhere else. Whether you’re.
+                    cite.testimonial-slider__author Dan Richey
+                    p.testimonial-slider__position District Sales Manager, Casper PLC
+        .companies
+          h2.visually-hidden Companies I work with
+          ul.companies__list
+            li.companies__item
+              img(src="img/1-company.svg" width="200" height="88", alt="Square company logo")
+            li.companies__item
+              img(src="img/2-company.svg" width="200" height="88", alt="Paperz company logo")
+            li.companies__item
+              img(src="img/3-company.svg" width="200" height="88", alt="Cuebiq company logo")
+            li.companies__item
+              img(src="img/4-company.svg" width="200" height="88", alt="Martino company logo")

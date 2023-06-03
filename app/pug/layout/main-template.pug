@@ -9,6 +9,7 @@ block mixins
   include ../mixins/_site-navigation.pug
   include ../mixins/_header-socials.pug
   include ../mixins/_svg.pug
+  include ../mixins/_work-items.pug
 
 doctype html
 html(lang="en" class= htmlClass)
@@ -29,4 +30,4 @@ html(lang="en" class= htmlClass)
       block content
 
     block scripts
-      script(src="js/script.min.js")
+      script(src="js/script.min.js" defer)

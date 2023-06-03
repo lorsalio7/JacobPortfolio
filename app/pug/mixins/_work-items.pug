@@ -1,0 +1,9 @@
+mixin work-items(array)
+  each item in array
+    li.work__item
+      a(href= item.cardLink).work__link
+        article.work-card
+          .work-card__text-wrapper
+            h3.work-card__title= item.cardTitle
+            p.work-card__tag= item.cardTag
+          img(src= item.cardImage width="315" height="248", alt= item.cardTitle).work-card__image

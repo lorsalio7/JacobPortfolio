@@ -1,0 +1,62 @@
+.work-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work__item {
+  margin-bottom: 56px;
+}
+
+.work__item:nth-child(n+5) {
+  display: none;
+}
+
+.work__item.work__item--visible {
+  display: block;
+}
+
+.work__item:nth-child(odd) {
+  margin-right: 56px;
+}
+
+.work-card__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  max-width: 200px;
+}
+
+.work-card__title {
+  position: relative;
+  order: 2;
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: $cod-gray;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: -74px;
+    width: 38px;
+    height: 38px;
+    background-image: url("../img/black-arrow.svg");
+    background-position: center;
+    background-size: 38px;
+    background-repeat: no-repeat;
+  }
+}
+
+.work-card__tag {
+  order: 1;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: "IBM Plex Sans Italic", sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 24px;
+  color: $cod-gray;
+}

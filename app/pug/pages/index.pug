@@ -5,5 +5,11 @@ block vars
   - var htmlClass = "page";
   - var bodyClass = "page__body";
 
+block prepend styles
+  link(rel="stylesheet", href="css/splide.min.css")
+
 block content
   include ../sections/_index-main.pug
+
+block prepend scripts
+  script(src="js/splide.min.js" defer)

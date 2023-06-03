@@ -1,0 +1,134 @@
+.testimonial-slider {
+  border-bottom: 1px solid $color-white;
+}
+
+.testimonial-slider__track {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-slider__buttons {
+  position: relative;
+  width: 100%;
+  order: 2;
+  margin-top: -132px;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    flex-basis: 345px;
+    width: 0;
+    margin-right: 115px;
+    height: 1px;
+  }
+}
+
+.testimonial-slider__inner-buttons {
+  flex-shrink: 3;
+  display: flex;
+  flex-basis: 545px;
+  padding-bottom: 72px;
+}
+
+.testimonial-slider__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: $color-white;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.testimonial-slider__button:first-of-type {
+  margin-right: 14px;
+}
+
+.testimonial-slider__button[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.testimonial-slider__prev-button .testimonial-slider__arrow {
+  transform: scale(1);
+}
+
+.testimonial-slider__slide {
+  display: flex;
+  justify-content: center;
+
+}
+
+.testimonial-slider__row {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-slider__image-wrapper {
+  flex-shrink: 1;
+  margin-right: 115px;
+  background-image: url("../img/testimonials-decor.png");
+  background-position: 0 0;
+  background-size: 235px 242px;
+  background-repeat: no-repeat;
+}
+
+.testimonial-slider__image {
+  display: block;
+}
+
+.testimonial-slider__blockquote {
+  flex-shrink: 3;
+  padding-top: 22px;
+  padding-bottom: 125px;
+  margin: 0;
+  max-width: 545px;
+}
+
+.testimonial-slider__text {
+  margin-top: 0;
+  margin-bottom: 42px;
+  font-family: "IBM Plex Sans Italic", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 32px;
+  line-height: 40px;
+  color: $color-white;
+
+  &::before {
+    content: "“";
+  }
+
+  &::after {
+    content: "”";
+  }
+}
+
+.testimonial-slider__author {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 31px;
+  color: $color-white;
+
+  &::before {
+    content: "-";
+  }
+}
+
+.testimonial-slider__position {
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: $color-white;
+}

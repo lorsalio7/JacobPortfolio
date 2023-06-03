@@ -1,0 +1,22 @@
+.work__section-header {
+  margin-bottom: 48px;
+}
+
+.work__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.work__link {
+  text-decoration: none;
+}
+
+.work__button-wrapper {
+  padding-top: 8px;
+  text-align: center;
+  margin-bottom: 120px;
+}

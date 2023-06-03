@@ -9,6 +9,12 @@
   text-decoration: none;
   color: $color-white;
   background-color: $cod-gray;
+  cursor: pointer;
+}
+
+.button--disabled {
+  opacity: 0.5;
+  cursor: default;
 }
 
 .button--transparent {

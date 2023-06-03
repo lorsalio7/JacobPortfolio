@@ -62,3 +62,31 @@ if (accordion) {
   });
 }
 ;
+var loadMoreWorkButton = document.querySelector(".work__button");
+var allWorkItemsLength = document.querySelectorAll(".work__item").length;
+var workItemsCount = 4;
+loadMoreWorkButton.addEventListener("click", function () {
+  workItemsCount += 2;
+  var arrayWorkItems = Array.from(document.querySelector(".work__list").children);
+  var visibleWorkItems = arrayWorkItems.slice(0, workItemsCount);
+  visibleWorkItems.forEach(function (el) {
+    return el.classList.add("work__item--visible");
+  });
+  if (visibleWorkItems.length === allWorkItemsLength) {
+    loadMoreWorkButton.classList.add("button--disabled");
+    loadMoreWorkButton.setAttribute("disabled", "disabled");
+  }
+});
+;
+document.addEventListener('DOMContentLoaded', function () {
+  var splide = new Splide('.splide', {
+    pagination: false,
+    gap: 50,
+    classes: {
+      prev: "splide__arrow--prev testimonial-slider__prev-button",
+      next: "splide__arrow--next testimonial-slider__next-button"
+    }
+  });
+  splide.mount();
+});
+;
