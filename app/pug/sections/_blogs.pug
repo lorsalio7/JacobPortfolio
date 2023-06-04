@@ -1,0 +1,31 @@
+section.blogs.fullsize#blogs
+  .container.blogs__container
+    .blogs__inner-container
+      header.section-header.section-header--center.blogs__section-header
+        h2.section-header__title Blog
+        p.section-header__subtitle Read My Blog
+      .blogs__posts-wrapper
+        ul.blogs__list
+          li.blogs__item
+            article.blog-article.blogs__article
+              a(href="#").blog-article__link
+                h3.blog-article__title 12 unique example of portfolio websites
+              time(datetime="2022-07-10").blog-article__post-date 10 July, 2022
+              img(src="img/1-blog.jpg" width="315" height="260", alt="12 unique example of portfolio websites").blog-article__image
+          li.blogs__item
+            article.blog-article.blogs__article
+              a(href="#").blog-article__link
+                h3.blog-article__title 12 unique example of portfolio websites
+              time(datetime="2022-07-10").blog-article__post-date 10 July, 2022
+              img(src="img/2-blog.jpg" width="315" height="260", alt="12 unique example of portfolio websites").blog-article__image
+          li.blogs__item
+            article.blog-article.blogs__article
+              a(href="#").blog-article__link
+                h3.blog-article__title 12 unique example of portfolio websites
+              time(datetime="2022-07-10").blog-article__post-date 10 July, 2022
+              img(src="img/3-blog.jpg" width="315" height="260", alt="12 unique example of portfolio websites").blog-article__image
+        .blogs__button-wrapper
+          button(type="button").button.blogs__button
+            | Load more
+            span.button__icon-bg
+              +svg("button__icon", "arrow-ic", 24, 24)

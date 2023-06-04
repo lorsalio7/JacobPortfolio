@@ -1,0 +1,35 @@
+.blogs {
+  padding: 50px 0;
+}
+
+.blogs__container {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.blogs__inner-container {
+  flex-grow: 1;
+}
+
+.blogs__section-header {
+  margin-bottom: 48px;
+}
+
+.blogs__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 85px;
+  padding: 0;
+}
+
+.blogs__article {
+  max-width: 315px;
+}
+
+.blogs__button-wrapper {
+  text-align: center;
+}
