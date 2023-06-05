@@ -3,6 +3,44 @@
 var burgerButton = document.querySelector(".burger-button");
 var siteMenu = document.querySelector(".page__site-header");
 var pageContent = document.querySelector(".page__page-content");
+var menuLinks = siteMenu.querySelectorAll(".site-navigation__link");
+
+// menuLinks.forEach(link => {
+//   link.addEventListener("click", () => {
+//     removeActiveClass(menuLinks);
+//     link.classList.add("site-navigation__link--active");
+//   })
+// });
+
+// function removeActiveClass(elements) {
+//   for(let i = 0; i < elements.length; i++) {
+//     elements[i].classList.remove("site-navigation__link--active");
+//   }
+// }
+
+var sections = document.querySelectorAll(".fullsize");
+function callbackObserver(entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting === true) {
+      console.log(entry.target.id);
+      menuLinks.forEach(function (link) {
+        var id = link.getAttribute("href").replace("#", "");
+        if (id === entry.target.id) {
+          link.classList.add("site-navigation__link--active");
+        } else {
+          link.classList.remove("site-navigation__link--active");
+        }
+      });
+    }
+  });
+}
+var observer = new IntersectionObserver(callbackObserver, {
+  root: document.querySelector("page__page-content"),
+  threshold: 0.5
+});
+sections.forEach(function (section) {
+  return observer.observe(section);
+});
 burgerButton.addEventListener("click", function () {
   burgerButton.classList.toggle("burger-button--active");
   if (burgerButton.classList.contains("burger-button--active")) {

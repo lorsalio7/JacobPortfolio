@@ -1,0 +1,40 @@
+section.contact.fullsize#contact
+  .container.contact__container
+    .contact__inner-container
+      .contact__text
+        header.section-header.contact__section-header
+          h2.section-header__title Contact
+          p.section-header__subtitle Reach out me
+        address.contact__address
+          | 249 king Sir, 05th Floor, Ultra House Building,
+          br
+          | Melboune, VIC 3000, London.
+        a(href="tel:+770224440505").contact__phone +77 022 444 05 05
+        a(href="mailto:jacob360@gmail.com").contact__email jacob360@gmail.com
+        ul.contact__socials-list.socials-list
+          li.socials-list__item
+            a(href="#").socials-list__link Vkontakte
+          li.socials-list__item
+            a(href="#").socials-list__link Twitter
+          li.socials-list__item
+            a(href="#").socials-list__link Dribbble
+          li.socials-list__item
+            a(href="#").socials-list__link Linkedin
+      .contact__form
+        form(action="#").contact-form
+          h3.contact-form__title any project?
+          .contact-form__row
+            label(for="contact-form-name").contact-form__label.visually-hidden Name
+            input(type="text", required name="contact-form-name" id="contact-form-name" placeholder="name").contact-form__input
+            label(for="contact-form-email").contact-form__label.visually-hidden Email
+            input(type="email", required name="contact-form-email" id="contact-form-email" placeholder="email").contact-form__input
+          label(for="contact-form-text").visually-hidden Message
+          textarea(name="contact-form-text" required id="contact-form-text", placeholder="message").contact-form__textarea
+          label(for="contact-form-attach-file").contact-form__attach-file-label Attach file
+          input(type="file", name="contact-form-attach-file" id="contact-form-attach-file").visually-hidden.contact-form__attach-file-input
+          .contact-form__button-wrapper
+            button(type="submit").button.contact-form__button
+              | Submit now
+              span.button__icon-bg
+                +svg("button__icon", "arrow-ic", 24, 24)
+

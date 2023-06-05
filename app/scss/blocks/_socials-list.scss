@@ -1,0 +1,25 @@
+.socials-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socials-list__item:not(:last-of-type) {
+  margin-right: 24px;
+}
+
+.socials-list__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $cod-gray;
+
+  @include hover-focus {
+    text-decoration: underline;
+  }
+}

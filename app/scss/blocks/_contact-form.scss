@@ -1,0 +1,96 @@
+.contact-form__title {
+  margin-top: 0;
+  margin-bottom: 43px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.contact-form__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 49px;
+}
+
+.contact-form__input {
+  border: 1.5px solid transparent;
+  border-bottom: 1.5px solid $color-white;
+  padding-top: 6px;
+  padding-bottom: 9px;
+  padding-left: 0;
+  width: 100%;
+  max-width: 280px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-white;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+    border: 1.5px solid $color-white;
+  }
+}
+
+.contact-form__input::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $color-white;
+  opacity: 0.8;
+}
+
+.contact-form__input:first-of-type {
+  margin-right: 45px;
+}
+
+.contact-form__textarea {
+  margin-bottom: 12px;
+  border: 1.5px solid transparent;
+  border-bottom: 1.5px solid $color-white;
+  padding-top: 6px;
+  padding-bottom: 9px;
+  padding-left: 0;
+  width: 100%;
+  min-height: 91px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-white;
+  background-color: transparent;
+  resize: vertical;
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $color-white;
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1.5px solid $color-white;
+  }
+}
+
+.contact-form__attach-file-label {
+  display: inline-block;
+  margin-bottom: 40px;
+  padding-left: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $color-white;
+  background-image: url("../img/link-ic.svg");
+  background-position: left center;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  cursor: pointer;
+}
