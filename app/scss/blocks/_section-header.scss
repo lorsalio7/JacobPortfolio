@@ -28,4 +28,14 @@
   line-height: 56px;
   text-transform: uppercase;
   color: $cod-gray;
+
+  @include px720 {
+    font-size: 44px;
+    line-height: 52px;
+  }
+
+  @include px425 {
+    font-size: 38px;
+    line-height: 46px;
+  }
 }

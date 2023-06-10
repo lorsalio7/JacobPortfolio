@@ -14,6 +14,10 @@
 .site-header__navigation {
   margin-top: 104px;
   margin-bottom: 30px;
+
+  @include px425 {
+    margin-top: 80px;
+  }
 }
 
 .site-header__bottom {

@@ -1,0 +1,8 @@
+.overlay {
+  display: none;
+  background-color: rgba($color-black, 0.6);
+}
+
+.overlay--active {
+  display: block;
+}

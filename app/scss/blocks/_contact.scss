@@ -1,3 +1,9 @@
+.contact__container {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .contact__inner-container {
   display: flex;
   align-items: center;
@@ -23,27 +29,27 @@
 }
 
 .contact__phone {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 40px;
-  color: $cod-gray;
-  text-decoration: none;
   display: inline-block;
   margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-decoration: none;
+  color: $cod-gray;
 }
 
 .contact__email {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 40px;
-  color: $cod-gray;
-  text-decoration: none;
   display: inline-block;
   margin-bottom: 80px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-decoration: none;
+  color: $cod-gray;
 }
 
 .contact__form {
   flex-grow: 1;
-  background-image: $gradient;
   padding: 64px 85px;
+  background-image: $gradient;
 }

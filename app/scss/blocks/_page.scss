@@ -19,9 +19,21 @@
 
 .page__burger-button {
   position: fixed;
-  left: 34px;
+  left: 25px;
   top: 34px;
   z-index: 150;
+
+  @include px720 {
+    left: 15px;
+  }
+}
+
+.page__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .page__page-content {

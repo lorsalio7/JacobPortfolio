@@ -1,14 +1,27 @@
 .experience-list {
   display: flex;
   justify-content: space-between;
+
+  @include px920 {
+    flex-direction: column;
+  }
 }
 
 .experience-list__item {
   max-width: 315px;
+
+  @include px920 {
+    max-width: 100%;
+  }
 }
 
 .experience-list__item:nth-child(1) {
   margin-right: 30px;
+
+  @include px920 {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .experience-list__title {
@@ -21,6 +34,10 @@
   font-size: 18px;
   line-height: 20px;
   color: $cod-gray;
+
+  @include px920 {
+    max-width: 100%;
+  }
 }
 
 .experience-list__title span {

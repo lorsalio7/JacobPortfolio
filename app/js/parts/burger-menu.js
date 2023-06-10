@@ -2,19 +2,9 @@ const burgerButton = document.querySelector(".burger-button");
 const siteMenu = document.querySelector(".page__site-header");
 const pageContent = document.querySelector(".page__page-content");
 const menuLinks = siteMenu.querySelectorAll(".site-navigation__link");
-
-// menuLinks.forEach(link => {
-//   link.addEventListener("click", () => {
-//     removeActiveClass(menuLinks);
-//     link.classList.add("site-navigation__link--active");
-//   })
-// });
-
-// function removeActiveClass(elements) {
-//   for(let i = 0; i < elements.length; i++) {
-//     elements[i].classList.remove("site-navigation__link--active");
-//   }
-// }
+const pageHtml = document.querySelector("html");
+let widthHeader = window.getComputedStyle(siteMenu).getPropertyValue("--width-header");
+const overlay = document.querySelector(".overlay");
 
 
 const sections = document.querySelectorAll(".fullsize");
@@ -22,7 +12,6 @@ const sections = document.querySelectorAll(".fullsize");
 function callbackObserver(entries, observer) {
   entries.forEach((entry) => {
     if(entry.isIntersecting === true) {
-      console.log(entry.target.id);
       menuLinks.forEach(link => {
         let id = link.getAttribute("href").replace("#", "");
 
@@ -36,7 +25,7 @@ function callbackObserver(entries, observer) {
   })
 }
 const observer = new IntersectionObserver(callbackObserver,
-  { root: document.querySelector("page__page-content"),threshold: 0.5 }
+  { root: document.querySelector("page__page-content"),threshold: 0.1 }
 );
 sections.forEach(section => observer.observe(section));
 
@@ -50,11 +39,20 @@ burgerButton.addEventListener("click", () => {
 });
 
 function openMenu() {
-  pageContent.style.transform = "translateX(300px)";
   siteMenu.classList.add("page__site-header--active");
+  pageHtml.classList.add("no-scroll");
+  overlay.classList.add("overlay--active");
 }
 
 function closeMenu() {
-  pageContent.style.transform = "translateX(0)";
+  burgerButton.classList.remove("burger-button--active");
   siteMenu.classList.remove("page__site-header--active");
+  pageHtml.classList.remove("no-scroll");
+  overlay.classList.remove("overlay--active");
 }
+
+overlay.addEventListener("click", () => {
+  if(overlay.classList.contains("overlay--active")) {
+    closeMenu();
+  }
+})

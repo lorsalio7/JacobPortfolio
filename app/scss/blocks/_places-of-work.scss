@@ -23,6 +23,10 @@
   line-height: 48px;
   text-transform: uppercase;
   color: $color-white;
+
+  @include px425 {
+    text-align: center;
+  }
 }
 
 .places-of-work__place {
@@ -35,6 +39,11 @@
   font-size: 18px;
   line-height: 24px;
   color: $color-white;
+
+  @include px425 {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .places-of-work__place span {

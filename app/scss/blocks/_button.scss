@@ -10,6 +10,10 @@
   color: $color-white;
   background-color: $cod-gray;
   cursor: pointer;
+
+  @include px425 {
+    padding: 14px 29px;
+  }
 }
 
 .button--disabled {

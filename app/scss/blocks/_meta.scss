@@ -8,12 +8,20 @@
 }
 
 .meta__item {
-  flex: 0 1 46%;
+  flex: 1 1 48%;
   margin-bottom: 40px;
+
+  @include px425 {
+    margin-bottom: 30px;
+  }
 }
 
 .meta__item:nth-child(1n) {
   margin-right: 11px;
+
+  @include px425 {
+    margin-right: 0;
+  }
 }
 
 .meta__text {

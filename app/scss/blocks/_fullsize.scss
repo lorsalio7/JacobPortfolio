@@ -1,3 +1,7 @@
 .fullsize {
   min-height: 100vh;
 }
+
+.fullsize__container {
+  flex-grow: 1;
+}

@@ -4,25 +4,13 @@ var burgerButton = document.querySelector(".burger-button");
 var siteMenu = document.querySelector(".page__site-header");
 var pageContent = document.querySelector(".page__page-content");
 var menuLinks = siteMenu.querySelectorAll(".site-navigation__link");
-
-// menuLinks.forEach(link => {
-//   link.addEventListener("click", () => {
-//     removeActiveClass(menuLinks);
-//     link.classList.add("site-navigation__link--active");
-//   })
-// });
-
-// function removeActiveClass(elements) {
-//   for(let i = 0; i < elements.length; i++) {
-//     elements[i].classList.remove("site-navigation__link--active");
-//   }
-// }
-
+var pageHtml = document.querySelector("html");
+var widthHeader = window.getComputedStyle(siteMenu).getPropertyValue("--width-header");
+var overlay = document.querySelector(".overlay");
 var sections = document.querySelectorAll(".fullsize");
 function callbackObserver(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting === true) {
-      console.log(entry.target.id);
       menuLinks.forEach(function (link) {
         var id = link.getAttribute("href").replace("#", "");
         if (id === entry.target.id) {
@@ -36,7 +24,7 @@ function callbackObserver(entries, observer) {
 }
 var observer = new IntersectionObserver(callbackObserver, {
   root: document.querySelector("page__page-content"),
-  threshold: 0.5
+  threshold: 0.1
 });
 sections.forEach(function (section) {
   return observer.observe(section);
@@ -50,13 +38,22 @@ burgerButton.addEventListener("click", function () {
   }
 });
 function openMenu() {
-  pageContent.style.transform = "translateX(300px)";
   siteMenu.classList.add("page__site-header--active");
+  pageHtml.classList.add("no-scroll");
+  overlay.classList.add("overlay--active");
 }
 function closeMenu() {
-  pageContent.style.transform = "translateX(0)";
+  burgerButton.classList.remove("burger-button--active");
   siteMenu.classList.remove("page__site-header--active");
+  pageHtml.classList.remove("no-scroll");
+  overlay.classList.remove("overlay--active");
 }
+overlay.addEventListener("click", function () {
+  if (overlay.classList.contains("overlay--active")) {
+    closeMenu();
+  }
+});
+var scroll = new SmoothScroll(".site-navigation__link");
 ;
 var accordion = document.querySelector(".accordion");
 if (accordion) {

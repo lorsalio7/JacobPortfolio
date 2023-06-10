@@ -1,6 +1,12 @@
-.services__container {
+.services {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.services__container {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .services__section-header {

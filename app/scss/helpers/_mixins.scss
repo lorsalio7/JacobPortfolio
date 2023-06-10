@@ -34,6 +34,30 @@
 
 // @include hover-focus {}
 
+@mixin px425 {
+  @media (max-width: 425px) {
+    @content;
+  }
+}
+
+// @include px425 {}
+
+@mixin px720 {
+  @media (max-width: 720px) {
+    @content;
+  }
+}
+
+// @include px720 {}
+
+@mixin px920 {
+  @media (max-width: 920px) {
+    @content;
+  }
+}
+
+// @include px920 {}
+
 @mixin px1124 {
   @media (max-width: 1124px) {
     @content;
@@ -41,6 +65,22 @@
 }
 
 // @include px1124 {}
+
+@mixin px1350 {
+  @media (max-width: 1350px) {
+    @content;
+  }
+}
+
+// @include px1350 {}
+
+@mixin px1680 {
+  @media (max-width: 1680px) {
+    @content;
+  }
+}
+
+// @include px1680 {}
 
 @mixin px2000 {
   @media (min-width: 2000px) {

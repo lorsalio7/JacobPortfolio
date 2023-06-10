@@ -15,7 +15,7 @@
 }
 
 .burger-button--active {
-  transform: translateX(calc(var(--width-header) - 20px));
+  transform: translateX(var(--width-header));
 
   &::before {
     z-index: -1;
