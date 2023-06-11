@@ -1233,13 +1233,13 @@ body {
   line-height: 48px;
   letter-spacing: -0.05em;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
+  -webkit-text-stroke: transparent;
   text-transform: uppercase;
   color: #f6605f;
   background-image: -o-linear-gradient(177deg, #ffb147 0%, #ff6c63 50%, #b86adf 100%);
   background-image: linear-gradient(273deg, #ffb147 0%, #ff6c63 50%, #b86adf 100%);
-  background-clip: text;
   -webkit-background-clip: text;
+          background-clip: text;
 }
 
 .experience-list__description {
@@ -1395,6 +1395,7 @@ body {
 
 .accordion__button span {
   position: relative;
+  display: inline-block;
   padding-left: 49px;
   font-weight: 700;
   font-size: 32px;
@@ -1420,16 +1421,17 @@ body {
 
 .accordion__button--active span {
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
+  -webkit-text-stroke: transparent;
   background-image: -o-linear-gradient(177deg, #ffb147 0%, #ff6c63 50%, #b86adf 100%);
   background-image: linear-gradient(273deg, #ffb147 0%, #ff6c63 50%, #b86adf 100%);
-  background-clip: text;
   -webkit-background-clip: text;
+          background-clip: text;
 }
 
 .accordion__panel {
   overflow: hidden;
   margin-left: auto;
+  padding: 0 15px;
   max-width: 660px;
   max-height: 0;
   -webkit-transition: max-height 0.3s ease;
@@ -1446,8 +1448,9 @@ body {
 
 .accordion__panel img {
   display: block;
-  height: 100%;
   max-width: 660px;
+  margin-right: auto;
+  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -2337,6 +2340,42 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+
+  .accordion__button {
+    padding: 20px 0;
+  }
+
+  .accordion__button::before {
+    right: 15px;
+  }
+
+  .accordion__button::after {
+    right: 15px;
+  }
+
+  .accordion__button span {
+    padding-right: 45px;
+    padding-left: 32px;
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  .accordion__button span::before {
+    left: 5px;
+    top: 18px;
+    border-radius: 2px;
+    width: 6px;
+    height: 6px;
+  }
+
+  .accordion__panel {
+    margin-left: 0;
+  }
+
+  .accordion__panel img {
+    width: 100%;
+    max-width: none;
+  }
 }
 
 @media (max-width: 425px) {
@@ -2404,6 +2443,25 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .accordion__button::before {
+    right: 7px;
+  }
+
+  .accordion__button::after {
+    right: 7px;
+  }
+
+  .accordion__button span {
+    padding-right: 45px;
+    padding-left: 25px;
+    font-size: 22px;
+    line-height: 36px;
+  }
+
+  .accordion__button span::before {
+    top: 15px;
   }
 }
 

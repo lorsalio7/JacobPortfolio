@@ -17,6 +17,10 @@
   text-align: left;
   background-color: $color-white;
   cursor: pointer;
+
+  @include px720 {
+    padding: 20px 0;
+  }
 }
 
 .accordion__button::before {
@@ -30,6 +34,14 @@
   height: 2px;
   background-color: $cod-gray;
   transform: translateY(0);
+
+  @include px720 {
+    right: 15px;
+  }
+
+  @include px425 {
+    right: 7px;
+  }
 }
 
 .accordion__button::after {
@@ -44,6 +56,14 @@
   background-color: $cod-gray;
   transform: rotate(-90deg) translateY(0);
   transition: transform 0.3s ease;
+
+  @include px720 {
+    right: 15px;
+  }
+
+  @include px425 {
+    right: 7px;
+  }
 }
 
 .accordion__button--active::after {
@@ -52,12 +72,27 @@
 
 .accordion__button span {
   position: relative;
+  display: inline-block;
   padding-left: 49px;
   font-weight: 700;
   font-size: 32px;
   line-height: 48px;
   text-transform: uppercase;
   color: $cod-gray;
+
+  @include px720 {
+    padding-right: 45px;
+    padding-left: 32px;
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  @include px425 {
+    padding-right: 45px;
+    padding-left: 25px;
+    font-size: 22px;
+    line-height: 36px;
+  }
 }
 
 .accordion__button span::before {
@@ -69,6 +104,18 @@
   width: 10px;
   height: 10px;
   background-color: $cod-gray;
+
+  @include px720 {
+    left: 5px;
+    top: 18px;
+    border-radius: 2px;
+    width: 6px;
+    height: 6px;
+  }
+
+  @include px425 {
+    top: 15px;
+  }
 }
 
 .accordion__button--active span::before {
@@ -77,18 +124,22 @@
 
 .accordion__button--active span {
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
+  -webkit-text-stroke: transparent;
   background-image: $gradient;
   background-clip: text;
-  -webkit-background-clip: text;
 }
 
 .accordion__panel {
   overflow: hidden;
   margin-left: auto;
+  padding: 0 15px;
   max-width: 660px;
   max-height: 0;
   transition: max-height 0.3s ease;
+
+  @include px720 {
+    margin-left: 0;
+  }
 }
 
 .accordion__panel p {
@@ -100,7 +151,13 @@
 
 .accordion__panel img {
   display: block;
-  height: 100%;
   max-width: 660px;
+  margin-right: auto;
+  height: 100%;
   object-fit: contain;
+
+  @include px720 {
+    width: 100%;
+    max-width: none;
+  }
 }
