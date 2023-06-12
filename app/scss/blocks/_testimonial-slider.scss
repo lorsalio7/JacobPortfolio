@@ -23,6 +23,24 @@
     margin-right: 115px;
     width: 0;
     height: 1px;
+
+    @include px1350 {
+      flex-basis: 284px;
+    }
+
+    @include px920 {
+      flex-basis: 46%;
+      margin-right: 50px;
+    }
+
+    @include px720 {
+      display: none;
+    }
+  }
+
+  @include px720 {
+    order: 1;
+    margin-top: 0;
   }
 }
 
@@ -31,6 +49,15 @@
   flex-shrink: 3;
   flex-basis: 545px;
   padding-bottom: 72px;
+
+  @include px720 {
+    justify-content: flex-end;
+    padding-bottom: 25px;
+  }
+
+  @include px425 {
+    padding-bottom: 15px;
+  }
 }
 
 .testimonial-slider__button {
@@ -44,6 +71,11 @@
   background-color: $color-white;
   transition: opacity 0.3s ease;
   cursor: pointer;
+
+  @include px425 {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .testimonial-slider__button:first-of-type {
@@ -59,6 +91,12 @@
   transform: scale(1);
 }
 
+.testimonial-slider__list {
+  @include px720 {
+    order: 2;
+  }
+}
+
 .testimonial-slider__slide {
   display: flex;
   justify-content: center;
@@ -66,28 +104,54 @@
 
 .testimonial-slider__row {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+
+  @include px720 {
+    flex-direction: column-reverse;
+  }
 }
 
 .testimonial-slider__image-wrapper {
-  flex-shrink: 1;
+  flex-shrink: 0;
   margin-right: 115px;
   background-image: url("../img/testimonials-decor.png");
   background-position: 0 0;
   background-size: 235px 242px;
   background-repeat: no-repeat;
+
+  @include px1350 {
+    margin-right: 50px;
+  }
+
+  @include px920 {
+    flex-basis: 46%;
+  }
+
+  @include px720 {
+    flex-basis: 345px;
+    align-self: center;
+    margin-right: 0;
+    background-size: 70%;
+  }
 }
 
 .testimonial-slider__image {
   display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .testimonial-slider__blockquote {
-  flex-shrink: 3;
+  flex-shrink: 1;
   margin: 0;
   padding-top: 22px;
   padding-bottom: 125px;
   max-width: 545px;
+
+  @include px720 {
+    padding-bottom: 22px;
+  }
 }
 
 .testimonial-slider__text {
@@ -107,6 +171,17 @@
   &::after {
     content: "”";
   }
+
+  @include px920 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  @include px720 {
+    margin-bottom: 24px;
+    font-size: 22px;
+    line-height: 30px;
+  }
 }
 
 .testimonial-slider__author {
@@ -120,6 +195,11 @@
 
   &::before {
     content: "-";
+  }
+
+  @include px720 {
+    font-size: 20px;
+    line-height: 27px;
   }
 }
 

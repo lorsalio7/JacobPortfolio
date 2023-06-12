@@ -8,11 +8,31 @@
   justify-content: space-between;
   list-style-type: none;
   margin: 0;
+  margin-right: -56px;
   padding: 0;
+
+  @include px1680 {
+    margin-right: -35px;
+  }
+
+  @include px1350 {
+    margin-right: -10px;
+  }
+
+  @include px425 {
+    justify-content: center;
+    margin-right: 0;
+  }
 }
 
 .work__link {
   text-decoration: none;
+
+  @include hover-focus {
+    .work-card__title::before {
+      transform: translate(5px, -5px);
+    }
+  }
 }
 
 .work__button-wrapper {

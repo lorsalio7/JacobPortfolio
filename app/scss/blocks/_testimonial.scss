@@ -1,6 +1,18 @@
 .testimonial__container {
   padding: 100px 114px 48px;
   background-image: $gradient;
+
+  @include px1350 {
+    padding: 100px 40px 48px;
+  }
+
+  @include px720 {
+    padding: 100px 25px 48px;
+  }
+
+  @include px425 {
+    padding: 100px 15px 48px;
+  }
 }
 
 .testimonial__section-header {
@@ -9,4 +21,8 @@
 
 .testimonial__slider {
   margin-bottom: 48px;
+
+  @include px920 {
+    margin-bottom: 30px;
+  }
 }

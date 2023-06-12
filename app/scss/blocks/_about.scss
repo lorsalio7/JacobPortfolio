@@ -127,12 +127,11 @@
   line-height: 48px;
   letter-spacing: -0.05em;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
+  -webkit-text-stroke: transparent;
   text-transform: uppercase;
   color: #f6605f;
   background-image: $gradient;
   background-clip: text;
-  -webkit-background-clip: text;
 }
 
 .about__description {

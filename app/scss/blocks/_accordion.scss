@@ -151,9 +151,9 @@
 
 .accordion__panel img {
   display: block;
-  max-width: 660px;
   margin-right: auto;
   height: 100%;
+  max-width: 660px;
   object-fit: contain;
 
   @include px720 {
