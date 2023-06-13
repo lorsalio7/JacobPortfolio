@@ -6,12 +6,31 @@
   line-height: 48px;
   text-transform: uppercase;
   color: $color-white;
+
+  @include px920 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  @include px720 {
+    text-align: center;
+  }
+
+  @include px425 {
+    font-size: 30px;
+    line-height: 38px;
+  }
 }
 
 .contact-form__row {
   display: flex;
   justify-content: space-between;
   margin-bottom: 49px;
+
+  @include px1350 {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
 }
 
 .contact-form__input {
@@ -32,6 +51,14 @@
     outline: none;
     border: 1.5px solid $color-white;
   }
+
+  @include px1680 {
+    max-width: none;
+  }
+
+  @include px1350 {
+    margin-bottom: 30px;
+  }
 }
 
 .contact-form__input::placeholder {
@@ -45,6 +72,10 @@
 
 .contact-form__input:first-of-type {
   margin-right: 45px;
+
+  @include px1350 {
+    margin-right: 0;
+  }
 }
 
 .contact-form__textarea {
