@@ -18,12 +18,50 @@
 
 .blogs__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
   list-style-type: none;
   margin: 0;
+  margin-right: -35px;
   margin-bottom: 85px;
   padding: 0;
+
+  @include px1350 {
+    margin-right: -10px;
+  }
+
+  @include px720 {
+    margin-bottom: 60px;
+  }
+
+  @include px425 {
+    justify-content: center;
+    margin-right: 0;
+  }
+}
+
+.blogs__item {
+  margin-right: 35px;
+  margin-bottom: 35px;
+
+  @include px1680 {
+    flex-basis: calc((100% - 85px * 3 - 50px) / 3);
+  }
+
+  @include px1350 {
+    flex-basis: calc((100% - 10px * 3 - 50px) / 3);
+    margin-right: 10px;
+  }
+
+  @include px720 {
+    flex-basis: calc((100% - 10px * 2 - 30px) / 2);
+  }
+
+  @include px425 {
+    flex-basis: 315px;
+    margin-right: 0;
+  }
 }
 
 .blogs__article {

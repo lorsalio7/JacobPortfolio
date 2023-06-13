@@ -1806,6 +1806,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -1814,8 +1816,14 @@ body {
           justify-content: space-between;
   list-style-type: none;
   margin: 0;
+  margin-right: -35px;
   margin-bottom: 85px;
   padding: 0;
+}
+
+.blogs__item {
+  margin-right: 35px;
+  margin-bottom: 35px;
 }
 
 .blogs__article {
@@ -1844,6 +1852,10 @@ body {
       -ms-flex-order: 1;
           order: 1;
   margin-bottom: 24px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .blog-article__post-date {
@@ -2195,6 +2207,11 @@ body {
   .work-card__title {
     padding-bottom: 88px;
   }
+
+  .blogs__item {
+    -ms-flex-preferred-size: calc((100% - 255px - 50px) / 3);
+        flex-basis: calc((100% - 255px - 50px) / 3);
+  }
 }
 
 @media (max-width: 1350px) {
@@ -2250,6 +2267,16 @@ body {
 
   .testimonial-slider__image-wrapper {
     margin-right: 50px;
+  }
+
+  .blogs__list {
+    margin-right: -10px;
+  }
+
+  .blogs__item {
+    -ms-flex-preferred-size: calc((100% - 30px - 50px) / 3);
+        flex-basis: calc((100% - 30px - 50px) / 3);
+    margin-right: 10px;
   }
 }
 
@@ -2357,6 +2384,11 @@ body {
   .companies__list {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+
+  .blog-article__title {
+    font-size: 22px;
+    line-height: 28px;
   }
 }
 
@@ -2557,6 +2589,15 @@ body {
     font-size: 20px;
     line-height: 27px;
   }
+
+  .blogs__list {
+    margin-bottom: 60px;
+  }
+
+  .blogs__item {
+    -ms-flex-preferred-size: calc((100% - 20px - 30px) / 2);
+        flex-basis: calc((100% - 20px - 30px) / 2);
+  }
 }
 
 @media (max-width: 425px) {
@@ -2670,6 +2711,19 @@ body {
   .testimonial-slider__button {
     width: 50px;
     height: 50px;
+  }
+
+  .blogs__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 0;
+  }
+
+  .blogs__item {
+    -ms-flex-preferred-size: 315px;
+        flex-basis: 315px;
+    margin-right: 0;
   }
 }
 
