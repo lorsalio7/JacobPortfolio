@@ -1,6 +1,4 @@
 .hero {
-  padding-top: 50px;
-  padding-bottom: 50px;
   padding-left: 67px;
 
   @include px1680 {
@@ -24,10 +22,14 @@
 .hero__container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 0;
+  padding-right: 0;
 
   @include px1350 {
-    padding: 0 10px;
+    padding: 50px 10px;
   }
 
   @include px720 {
@@ -44,15 +46,15 @@
   position: relative;
   flex-grow: 0;
   flex-shrink: 1;
-  padding-top: 9px;
-  padding-left: 2px;
+  padding-top: 50px;
+  padding-left: 34px;
   max-width: 550px;
 
   &::before {
     content: "";
     position: absolute;
-    left: -47px;
-    top: -2px;
+    left: -17px;
+    top: 38px;
     z-index: -1;
     width: 216px;
     height: 135px;
@@ -68,7 +70,7 @@
 }
 
 .hero__meta .meta__item:first-of-type {
-  margin-right: 48px;
+  margin-right: 18px;
 
   @include px425 {
     margin-right: 0;
@@ -117,7 +119,7 @@
 
 .hero__description {
   margin-top: 0;
-  margin-bottom: 48px;
+  margin-bottom: 49px;
   font-size: 32px;
   line-height: 32px;
   letter-spacing: -0.03em;
@@ -150,7 +152,7 @@
   flex-grow: 0;
   flex-shrink: 0.5;
   margin-bottom: 43px;
-  padding-left: 65px;
+  padding-left: 99px;
 
   @include px1350 {
     padding-left: 35px;

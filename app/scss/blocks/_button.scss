@@ -9,10 +9,18 @@
   text-decoration: none;
   color: $color-white;
   background-color: $cod-gray;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
   cursor: pointer;
 
   @include px425 {
     padding: 14px 29px;
+  }
+
+  @include hover-focus {
+    color: $cod-gray;
+    background-color: $color-white;
   }
 }
 
@@ -26,6 +34,11 @@
   text-decoration: underline;
   color: $cod-gray;
   background-color: transparent;
+  transition: border 0.3s ease;
+
+  @include hover-focus {
+    border: 2px solid $cod-gray;
+  }
 }
 
 .button__icon-bg {

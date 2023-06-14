@@ -724,6 +724,9 @@ body {
   text-decoration: none;
   color: #fff;
   background-color: #141313;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  -o-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
   cursor: pointer;
 }
 
@@ -737,6 +740,9 @@ body {
   text-decoration: underline;
   color: #141313;
   background-color: transparent;
+  -webkit-transition: border 0.3s ease;
+  -o-transition: border 0.3s ease;
+  transition: border 0.3s ease;
 }
 
 .button__icon-bg {
@@ -761,8 +767,6 @@ body {
 }
 
 .hero {
-  padding-top: 50px;
-  padding-bottom: 50px;
   padding-left: 67px;
 }
 
@@ -787,8 +791,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .hero__text-content {
@@ -798,16 +807,16 @@ body {
           flex-grow: 0;
   -ms-flex-negative: 1;
       flex-shrink: 1;
-  padding-top: 9px;
-  padding-left: 2px;
+  padding-top: 50px;
+  padding-left: 34px;
   max-width: 550px;
 }
 
 .hero__text-content::before {
   content: "";
   position: absolute;
-  left: -47px;
-  top: -2px;
+  left: -17px;
+  top: 38px;
   z-index: -1;
   width: 216px;
   height: 135px;
@@ -823,7 +832,7 @@ body {
 }
 
 .hero__meta .meta__item:first-of-type {
-  margin-right: 48px;
+  margin-right: 18px;
 }
 
 .hero__title {
@@ -842,7 +851,7 @@ body {
 
 .hero__description {
   margin-top: 0;
-  margin-bottom: 48px;
+  margin-bottom: 49px;
   font-size: 32px;
   line-height: 32px;
   letter-spacing: -0.03em;
@@ -865,7 +874,7 @@ body {
   -ms-flex-negative: 0.5;
       flex-shrink: 0.5;
   margin-bottom: 43px;
-  padding-left: 65px;
+  padding-left: 99px;
 }
 
 .hero__photo {
@@ -2231,7 +2240,7 @@ body {
 
 @media (max-width: 1350px) {
   .hero__container {
-    padding: 0 10px;
+    padding: 50px 10px;
   }
 
   .hero__title {
@@ -2862,6 +2871,24 @@ body {
 
   .site-navigation__link:hover {
     font-weight: 700;
+  }
+
+  .button:focus {
+    color: #141313;
+    background-color: #fff;
+  }
+
+  .button:hover {
+    color: #141313;
+    background-color: #fff;
+  }
+
+  .button--transparent:focus {
+    border: 2px solid #141313;
+  }
+
+  .button--transparent:hover {
+    border: 2px solid #141313;
   }
 
   .work__link:focus .work-card__title::before {
