@@ -1,4 +1,6 @@
 .hero {
+  padding-top: 50px;
+  padding-bottom: 50px;
   padding-left: 67px;
 
   @include px1680 {
@@ -19,7 +21,7 @@
   }
 }
 
-.hero__content {
+.hero__container {
   display: flex;
   align-items: center;
   justify-content: space-around;
