@@ -22,7 +22,9 @@
 }
 
 .hero-socials__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid rgba($cod-gray, 0.1);
   border-radius: 50%;
   width: 40px;
@@ -34,4 +36,9 @@
   height: 38px;
   line-height: 0;
   transform: rotate(-90deg);
+}
+
+.hero-socials__icon--dribbble {
+  width: 32px;
+  height: 32px;
 }

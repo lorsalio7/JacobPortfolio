@@ -18,18 +18,22 @@
 
   &::before {
     content: "";
-    flex-shrink: 0;
-    flex-basis: 345px;
+    flex: 0 0 345px;
     margin-right: 115px;
     width: 0;
     height: 1px;
 
     @include px1350 {
-      flex-basis: 284px;
+      margin-right: 50px;
+    }
+
+    @include px1124 {
+      flex-grow: 1;
     }
 
     @include px920 {
       flex-basis: 46%;
+      margin-top: -112px;
       margin-right: 50px;
     }
 
@@ -46,9 +50,12 @@
 
 .testimonial-slider__inner-buttons {
   display: flex;
-  flex-shrink: 3;
-  flex-basis: 545px;
+  flex: 0 3 545px;
   padding-bottom: 72px;
+
+  @include px1124 {
+    flex-grow: 1;
+  }
 
   @include px720 {
     justify-content: flex-end;
@@ -56,7 +63,7 @@
   }
 
   @include px425 {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
   }
 }
 
@@ -128,7 +135,7 @@
   }
 
   @include px720 {
-    flex-basis: 345px;
+    flex-basis: auto;
     align-self: center;
     margin-right: 0;
     background-size: 70%;
@@ -146,8 +153,12 @@
   flex-shrink: 1;
   margin: 0;
   padding-top: 22px;
-  padding-bottom: 125px;
+  padding-bottom: 172px;
   max-width: 545px;
+
+  @include px920 {
+    padding-bottom: 150px;
+  }
 
   @include px720 {
     padding-bottom: 22px;

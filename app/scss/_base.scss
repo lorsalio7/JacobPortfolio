@@ -1,5 +1,9 @@
 :root {
   --width-header: 285px;
+
+  @include px425 {
+    --width-header: 235px;
+  }
 }
 
 html {

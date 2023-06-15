@@ -5,6 +5,10 @@
   overflow-y: auto;
   padding: 56px 48px 48px;
   background-color: $cod-gray;
+
+  @include px425 {
+    padding: 44px 28px;
+  }
 }
 
 .site-header__logo {

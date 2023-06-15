@@ -168,7 +168,21 @@
   }
 }
 
+.about__meta .meta__item {
+  flex-grow: 0;
+
+  @include px1350 {
+    flex-grow: 1;
+  }
+}
+
 .about__meta .meta__item:nth-child(1n) {
+  margin-right: 0;
+
+  @include px1350 {
+    margin-right: 10px;
+  }
+
   @include px425 {
     margin-right: 11px;
   }

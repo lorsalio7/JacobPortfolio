@@ -25,6 +25,8 @@
   color: $color-white;
 
   @include px425 {
+    font-size: 28px;
+    line-height: 44px;
     text-align: center;
   }
 }

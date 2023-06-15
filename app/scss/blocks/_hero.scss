@@ -23,10 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 50px 0;
 
   @include px1350 {
     padding: 50px 10px;
@@ -62,6 +59,21 @@
     background-position: 0 0;
     background-size: contain;
     background-repeat: no-repeat;
+
+    @include px425 {
+      left: 4px;
+      top: -5px;
+      width: 160px;
+      height: 105px;
+    }
+  }
+
+  @include px720 {
+    padding-top: 0;
+  }
+
+  @include px425 {
+    padding-left: 0;
   }
 }
 
@@ -108,8 +120,8 @@
   }
 
   @include px425 {
-    font-size: 50px;
-    line-height: 45px;
+    font-size: 48px;
+    line-height: 43px;
   }
 }
 
@@ -174,5 +186,9 @@
   @include px720 {
     align-self: flex-start;
     padding-top: 116px;
+  }
+
+  @include px425 {
+    margin-left: 10px;
   }
 }
