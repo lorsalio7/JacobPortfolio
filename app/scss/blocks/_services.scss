@@ -10,10 +10,14 @@
   }
 
   @include px720 {
-    padding: 30px 15px;
+    padding: 60px 15px;
   }
 }
 
 .services__section-header {
   margin-bottom: 14px;
+
+  @include px720 {
+    text-align: center;
+  }
 }

@@ -968,6 +968,7 @@ body {
   margin-bottom: 0;
   font-family: "IBM Plex Sans Bold Italic", sans-serif;
   font-weight: 700;
+  font-style: italic;
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
@@ -1030,6 +1031,7 @@ body {
   margin-bottom: 16px;
   font-family: "IBM Plex Sans Bold Italic", sans-serif;
   font-weight: 600;
+  font-style: italic;
   font-size: 18px;
   line-height: 24px;
   color: #141313;
@@ -1156,6 +1158,7 @@ body {
 
 .about__description span {
   font-family: "IBM Plex Sans Bold Italic", sans-serif;
+  font-style: italic;
 }
 
 .about__meta {
@@ -1251,6 +1254,7 @@ body {
   max-width: 220px;
   font-family: "IBM Plex Sans Bold Italic", sans-serif;
   font-weight: 700;
+  font-style: italic;
   font-size: 18px;
   line-height: 20px;
   color: #141313;
@@ -1260,6 +1264,7 @@ body {
   margin-right: 14px;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
+  font-style: normal;
   font-size: 48px;
   line-height: 48px;
   letter-spacing: -0.05em;
@@ -1845,17 +1850,10 @@ body {
 }
 
 .blogs__item {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
   -ms-flex-preferred-size: calc((100% - 258px - 50px) / 3);
       flex-basis: calc((100% - 258px - 50px) / 3);
   margin-right: 86px;
   margin-bottom: 86px;
-}
-
-.blogs__article {
-  max-width: 315px;
 }
 
 .blogs__button-wrapper {
@@ -2615,7 +2613,11 @@ body {
   }
 
   .services__container {
-    padding: 30px 15px;
+    padding: 60px 15px;
+  }
+
+  .services__section-header {
+    text-align: center;
   }
 
   .accordion__button {
@@ -2941,6 +2943,10 @@ body {
   .testimonial-slider__button {
     width: 50px;
     height: 50px;
+  }
+
+  .testimonial-slider__image-wrapper {
+    max-width: 250px;
   }
 
   .blogs__list {

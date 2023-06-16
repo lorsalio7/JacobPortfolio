@@ -1,17 +1,21 @@
-const loadMoreWorkButton = document.querySelector(".work__button");
-const allWorkItemsLength = document.querySelectorAll(".work__item").length;
+const workList = document.querySelector(".work__list");
 
-let workItemsCount = 4;
+if(workList) {
+  const loadMoreWorkButton = document.querySelector(".work__button");
+  const allWorkItemsLength = document.querySelectorAll(".work__item").length;
 
-loadMoreWorkButton.addEventListener("click", () => {
-  workItemsCount += 2;
-  const arrayWorkItems = Array.from(document.querySelector(".work__list").children);
-  const visibleWorkItems = arrayWorkItems.slice(0, workItemsCount);
+  let workItemsCount = 4;
 
-  visibleWorkItems.forEach(el => el.classList.add("work__item--visible"));
+  loadMoreWorkButton.addEventListener("click", () => {
+    workItemsCount += 2;
+    const arrayWorkItems = Array.from(document.querySelector(".work__list").children);
+    const visibleWorkItems = arrayWorkItems.slice(0, workItemsCount);
 
-  if(visibleWorkItems.length === allWorkItemsLength) {
-    loadMoreWorkButton.classList.add("button--disabled");
-    loadMoreWorkButton.setAttribute("disabled","disabled");
-  }
-});
+    visibleWorkItems.forEach(el => el.classList.add("work__item--visible"));
+
+    if(visibleWorkItems.length === allWorkItemsLength) {
+      loadMoreWorkButton.classList.add("button--disabled");
+      loadMoreWorkButton.setAttribute("disabled","disabled");
+    }
+  });
+}

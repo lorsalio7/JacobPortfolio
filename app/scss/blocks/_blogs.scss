@@ -54,7 +54,6 @@
 }
 
 .blogs__item {
-  flex-grow: 0;
   flex-basis: calc((100% - 86px * 3 - 50px) / 3);
   margin-right: 86px;
   margin-bottom: 86px;
@@ -79,10 +78,6 @@
     margin-right: 0;
     margin-bottom: 50px;
   }
-}
-
-.blogs__article {
-  max-width: 315px;
 }
 
 .blogs__button-wrapper {

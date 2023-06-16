@@ -140,6 +140,10 @@
     margin-right: 0;
     background-size: 70%;
   }
+
+  @include px425 {
+    max-width: 250px;
+  }
 }
 
 .testimonial-slider__image {

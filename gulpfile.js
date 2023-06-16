@@ -165,8 +165,8 @@ function images() {
     .pipe(newer(path.build.img))
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
-      imagemin.mozjpeg({quality: 95, progressive: true}),
-      imagemin.optipng({optimizationLevel: 1}),
+      imagemin.mozjpeg({quality: 85, progressive: true}),
+      imagemin.optipng({optimizationLevel: 2}),
       imagemin.svgo({
         plugins: [
           {removeViewBox: false},

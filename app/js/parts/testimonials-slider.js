@@ -1,11 +1,15 @@
-document.addEventListener( 'DOMContentLoaded', function() {
-  var splide = new Splide( '.splide', {
-    pagination: false,
-    gap: 50,
-    classes: {
-      prev: "splide__arrow--prev testimonial-slider__prev-button",
-      next: "splide__arrow--next testimonial-slider__next-button"
-    }
+const testimonialSlider = document.querySelector(".testimonial__slider");
+
+if(testimonialSlider) {
+  document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide( '.splide', {
+      pagination: false,
+      gap: 50,
+      classes: {
+        prev: "splide__arrow--prev testimonial-slider__prev-button",
+        next: "splide__arrow--next testimonial-slider__next-button"
+      }
+    });
+    splide.mount();
   });
-  splide.mount();
-});
+}
