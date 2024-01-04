@@ -1,6 +1,6 @@
-// @include font("$name", "$font-family", $weight, $style);
-@include font("IBMPlexSansBold", "IBM Plex Sans", 700, normal);
-@include font("IBMPlexSansBoldItalic", "IBM Plex Sans Bold Italic", 700, italic);
-@include font("IBMPlexSansMedium", "IBM Plex Sans", 500, normal);
-@include font("IBMPlexSansRegular", "IBM Plex Sans", 400, normal);
-@include font("IBMPlexSansSemiBoldItalic", "IBM Plex Sans Italic", 600, italic);
+// @include font("$name", "$font-family", $weight, $style, $font-name-local, $font-name-local-alternate);
+@include font("IBMPlexSansBold", "IBM Plex Sans", 700, normal, "IBM Plex Sans Bold", "IBM-Plex-Sans-Bold");
+@include font("IBMPlexSansBoldItalic", "IBM Plex Sans Bold Italic", 700, italic, "IBM Plex Sans BoldItalic", "IBM-Plex-Sans-Bold-Italic");
+@include font("IBMPlexSansMedium", "IBM Plex Sans", 500, normal, "IBM Plex Sans Medium", "IBM-Plex-Sans-Medium");
+@include font("IBMPlexSansRegular", "IBM Plex Sans", 400, normal, "IBM Plex Sans Regular", "IBM-Plex-Sans-Regular");
+@include font("IBMPlexSansSemiBoldItalic", "IBM Plex Sans Italic", 600, italic, "IBM Plex Sans SemiBold Italic", "IBM-Plex-Sans-SemiBold-Italic");
