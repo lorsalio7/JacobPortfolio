@@ -28,7 +28,7 @@
 .work__link {
   text-decoration: none;
 
-  @include hover-focus {
+  @include hover {
     .work-card__title::before {
       transform: translate(5px, -5px);
     }

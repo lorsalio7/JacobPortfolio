@@ -18,7 +18,7 @@
     padding: 14px 29px;
   }
 
-  @include hover-focus {
+  @include hover {
     color: $cod-gray;
     background-color: $color-white;
   }
@@ -36,7 +36,7 @@
   background-color: transparent;
   transition: border 0.3s ease;
 
-  @include hover-focus {
+  @include hover {
     border: 2px solid $cod-gray;
   }
 }
