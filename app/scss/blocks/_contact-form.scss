@@ -7,16 +7,16 @@
   text-transform: uppercase;
   color: $color-white;
 
-  @include px920 {
+  @include max-md {
     font-size: 36px;
     line-height: 44px;
   }
 
-  @include px720 {
+  @include max-sm {
     text-align: center;
   }
 
-  @include px425 {
+  @include max-xs {
     font-size: 30px;
     line-height: 38px;
   }
@@ -27,7 +27,7 @@
   justify-content: space-between;
   margin-bottom: 49px;
 
-  @include px1350 {
+  @include max-xl {
     flex-direction: column;
     margin-bottom: 0;
   }
@@ -52,11 +52,11 @@
     border: 1.5px solid $color-white;
   }
 
-  @include px1680 {
+  @include max-xxl {
     max-width: none;
   }
 
-  @include px1350 {
+  @include max-xl {
     margin-bottom: 30px;
   }
 }
@@ -73,7 +73,7 @@
 .contact-form__input:first-of-type {
   margin-right: 45px;
 
-  @include px1350 {
+  @include max-xl {
     margin-right: 0;
   }
 }

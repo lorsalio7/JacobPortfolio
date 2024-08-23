@@ -43,7 +43,7 @@
   line-height: 30px;
   color: $cod-gray;
 
-  @include px920 {
+  @include max-md {
     font-size: 22px;
     line-height: 28px;
   }

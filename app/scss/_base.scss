@@ -1,7 +1,7 @@
 :root {
   --width-header: 285px;
 
-  @include px425 {
+  @include max-xs {
     --width-header: 235px;
   }
 }

@@ -5,11 +5,11 @@
   padding-bottom: 80px;
   min-height: 100vh;
 
-  @include px1680 {
+  @include max-xxl {
     padding: 60px 25px;
   }
 
-  @include px720 {
+  @include max-sm {
     padding: 60px 15px;
   }
 }
@@ -17,7 +17,7 @@
 .services__section-header {
   margin-bottom: 14px;
 
-  @include px720 {
+  @include max-sm {
     text-align: center;
   }
 }

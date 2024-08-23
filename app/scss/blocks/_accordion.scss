@@ -18,7 +18,7 @@
   background-color: $color-white;
   cursor: pointer;
 
-  @include px720 {
+  @include max-sm {
     padding: 20px 0;
   }
 }
@@ -35,11 +35,11 @@
   background-color: $cod-gray;
   transform: translateY(0);
 
-  @include px720 {
+  @include max-sm {
     right: 15px;
   }
 
-  @include px425 {
+  @include max-xs {
     right: 7px;
   }
 }
@@ -57,11 +57,11 @@
   transform: rotate(-90deg) translateY(0);
   transition: transform 0.3s ease;
 
-  @include px720 {
+  @include max-sm {
     right: 15px;
   }
 
-  @include px425 {
+  @include max-xs {
     right: 7px;
   }
 }
@@ -80,14 +80,14 @@
   text-transform: uppercase;
   color: $cod-gray;
 
-  @include px720 {
+  @include max-sm {
     padding-right: 45px;
     padding-left: 32px;
     font-size: 26px;
     line-height: 40px;
   }
 
-  @include px425 {
+  @include max-xs {
     padding-right: 45px;
     padding-left: 25px;
     font-size: 22px;
@@ -105,7 +105,7 @@
   height: 10px;
   background-color: $cod-gray;
 
-  @include px720 {
+  @include max-sm {
     left: 5px;
     top: 18px;
     border-radius: 2px;
@@ -113,7 +113,7 @@
     height: 6px;
   }
 
-  @include px425 {
+  @include max-xs {
     top: 15px;
   }
 }
@@ -137,7 +137,7 @@
   max-height: 0;
   transition: max-height 0.3s ease;
 
-  @include px720 {
+  @include max-sm {
     margin-left: 0;
   }
 }
@@ -156,7 +156,7 @@
   max-width: 660px;
   object-fit: contain;
 
-  @include px720 {
+  @include max-sm {
     width: 100%;
     max-width: none;
   }

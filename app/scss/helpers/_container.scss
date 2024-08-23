@@ -3,16 +3,16 @@
   padding: 0 15px;
   max-width: 1266px;
 
-  @include px2000 {
+  @include max-xxxl {
     margin: 0 auto;
   }
 
-  @include px1680 {
+  @include max-xxl {
     margin: 0 auto;
     padding: 0 25px;
   }
 
-  @include px720 {
+  @include max-sm {
     padding: 0 15px;
     max-width: 600px;
   }

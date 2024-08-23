@@ -11,15 +11,15 @@
   margin-right: -56px;
   padding: 0;
 
-  @include px1680 {
+  @include max-xxl {
     margin-right: -35px;
   }
 
-  @include px1350 {
+  @include max-xl {
     margin-right: -10px;
   }
 
-  @include px425 {
+  @include max-xs {
     justify-content: center;
     margin-right: 0;
   }

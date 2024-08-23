@@ -6,7 +6,7 @@
   padding: 56px 48px 48px;
   background-color: $cod-gray;
 
-  @include px425 {
+  @include max-xs {
     padding: 44px 28px;
   }
 }
@@ -19,7 +19,7 @@
   margin-top: 104px;
   margin-bottom: 30px;
 
-  @include px425 {
+  @include max-xs {
     margin-top: 80px;
   }
 }

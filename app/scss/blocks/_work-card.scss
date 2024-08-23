@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
 
-  @include px1680 {
+  @include max-xxl {
     flex-direction: column-reverse;
   }
 }
@@ -11,22 +11,22 @@
   margin-right: 56px;
   margin-bottom: 56px;
 
-  @include px1680 {
+  @include max-xxl {
     flex-basis: calc((100% - 85px * 3 - 50px) / 3);
     margin-right: 35px;
     margin-bottom: 35px;
   }
 
-  @include px1350 {
+  @include max-xl {
     flex-basis: calc((100% - 10px * 3 - 50px) / 3);
     margin-right: 10px;
   }
 
-  @include px720 {
+  @include max-sm {
     flex-basis: calc((100% - 10px * 2 - 20px) / 2);
   }
 
-  @include px425 {
+  @include max-xs {
     flex: 0 1 315px;
     margin-right: 0;
   }
@@ -46,7 +46,7 @@
   margin-right: 30px;
   max-width: 200px;
 
-  @include px1680 {
+  @include max-xxl {
     margin-right: 0;
     padding-top: 15px;
     max-width: 315px;
@@ -84,32 +84,32 @@
     background-repeat: no-repeat;
     transition: transform 0.3s ease;
 
-    @include px1680 {
+    @include max-xxl {
       bottom: 12px;
     }
 
-    @include px720 {
+    @include max-sm {
       width: 30px;
       height: 30px;
       background-size: 30px;
     }
   }
 
-  @include px1680 {
+  @include max-xxl {
     padding-bottom: 88px;
   }
 
-  @include px1350 {
+  @include max-xl {
     font-size: 30px;
     line-height: 30px;
   }
 
-  @include px920 {
+  @include max-md {
     font-size: 27px;
     line-height: 27px;
   }
 
-  @include px720 {
+  @include max-sm {
     padding-bottom: 80px;
   }
 }

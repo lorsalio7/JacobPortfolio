@@ -14,7 +14,7 @@
     background-color 0.3s ease;
   cursor: pointer;
 
-  @include px425 {
+  @include max-xs {
     padding: 14px 29px;
   }
 

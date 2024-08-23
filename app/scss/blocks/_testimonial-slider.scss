@@ -23,26 +23,26 @@
     width: 0;
     height: 1px;
 
-    @include px1350 {
+    @include max-xl {
       margin-right: 50px;
     }
 
-    @include px1124 {
+    @include max-lg {
       flex-grow: 1;
     }
 
-    @include px920 {
+    @include max-md {
       flex-basis: 46%;
       margin-top: -112px;
       margin-right: 50px;
     }
 
-    @include px720 {
+    @include max-sm {
       display: none;
     }
   }
 
-  @include px720 {
+  @include max-sm {
     order: 1;
     margin-top: 0;
   }
@@ -53,16 +53,16 @@
   flex: 0 3 545px;
   padding-bottom: 72px;
 
-  @include px1124 {
+  @include max-lg {
     flex-grow: 1;
   }
 
-  @include px720 {
+  @include max-sm {
     justify-content: flex-end;
     padding-bottom: 25px;
   }
 
-  @include px425 {
+  @include max-xs {
     padding-bottom: 5px;
   }
 }
@@ -79,7 +79,7 @@
   transition: opacity 0.3s ease;
   cursor: pointer;
 
-  @include px425 {
+  @include max-xs {
     width: 50px;
     height: 50px;
   }
@@ -99,7 +99,7 @@
 }
 
 .testimonial-slider__list {
-  @include px720 {
+  @include max-sm {
     order: 2;
   }
 }
@@ -113,7 +113,7 @@
   display: flex;
   align-items: flex-end;
 
-  @include px720 {
+  @include max-sm {
     flex-direction: column-reverse;
   }
 }
@@ -126,22 +126,22 @@
   background-size: 235px 242px;
   background-repeat: no-repeat;
 
-  @include px1350 {
+  @include max-xl {
     margin-right: 50px;
   }
 
-  @include px920 {
+  @include max-md {
     flex-basis: 46%;
   }
 
-  @include px720 {
+  @include max-sm {
     flex-basis: auto;
     align-self: center;
     margin-right: 0;
     background-size: 70%;
   }
 
-  @include px425 {
+  @include max-xs {
     max-width: 250px;
   }
 }
@@ -160,11 +160,11 @@
   padding-bottom: 172px;
   max-width: 545px;
 
-  @include px920 {
+  @include max-md {
     padding-bottom: 150px;
   }
 
-  @include px720 {
+  @include max-sm {
     padding-bottom: 22px;
   }
 }
@@ -187,12 +187,12 @@
     content: "”";
   }
 
-  @include px920 {
+  @include max-md {
     font-size: 30px;
     line-height: 38px;
   }
 
-  @include px720 {
+  @include max-sm {
     margin-bottom: 24px;
     font-size: 22px;
     line-height: 30px;
@@ -212,7 +212,7 @@
     content: "-";
   }
 
-  @include px720 {
+  @include max-sm {
     font-size: 20px;
     line-height: 27px;
   }

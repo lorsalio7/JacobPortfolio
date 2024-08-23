@@ -11,7 +11,7 @@
   flex: 1 1 48%;
   margin-bottom: 40px;
 
-  @include px425 {
+  @include max-xs {
     margin-bottom: 30px;
   }
 }
@@ -19,7 +19,7 @@
 .meta__item:nth-child(1n) {
   margin-right: 11px;
 
-  @include px425 {
+  @include max-xs {
     margin-right: 0;
   }
 }

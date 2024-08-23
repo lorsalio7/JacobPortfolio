@@ -30,12 +30,12 @@
   text-transform: uppercase;
   color: $cod-gray;
 
-  @include px720 {
+  @include max-sm {
     font-size: 44px;
     line-height: 52px;
   }
 
-  @include px425 {
+  @include max-xs {
     font-size: 38px;
     line-height: 46px;
   }

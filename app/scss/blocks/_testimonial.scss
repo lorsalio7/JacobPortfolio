@@ -2,15 +2,15 @@
   padding: 100px 114px 48px;
   background-image: $gradient;
 
-  @include px1350 {
+  @include max-xl {
     padding: 100px 40px 48px;
   }
 
-  @include px720 {
+  @include max-sm {
     padding: 100px 25px 48px;
   }
 
-  @include px425 {
+  @include max-xs {
     padding: 100px 15px 48px;
   }
 }
@@ -22,7 +22,7 @@
 .testimonial__slider {
   margin-bottom: 48px;
 
-  @include px920 {
+  @include max-md {
     margin-bottom: 30px;
   }
 }

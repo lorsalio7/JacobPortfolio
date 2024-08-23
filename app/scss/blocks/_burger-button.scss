@@ -9,7 +9,7 @@
   transition: transform 0.3s ease;
   cursor: pointer;
 
-  @include px1124 {
+  @include max-lg {
     display: block;
   }
 }
