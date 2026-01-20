@@ -829,7 +829,7 @@ body {
   z-index: -1;
   width: 216px;
   height: 135px;
-  background-image: url("../img/hero-decor.svg");
+  background-image: url("../img/decor/hero-decor.svg");
   background-position: 0 0;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1011,19 +1011,19 @@ body {
 }
 
 .meta__icon--phone::before {
-  background-image: url("../img/telephone-ic.svg");
+  background-image: url("../img/icons/telephone-ic.svg");
 }
 
 .meta__icon--email::before {
-  background-image: url("../img/email-ic.svg");
+  background-image: url("../img/icons/email-ic.svg");
 }
 
 .meta__icon--pin::before {
-  background-image: url("../img/pin-ic.svg");
+  background-image: url("../img/icons/pin-ic.svg");
 }
 
 .meta__icon--contact::before {
-  background-image: url("../img/contact-ic.svg");
+  background-image: url("../img/icons/contact-ic.svg");
 }
 
 .section-header--center {
@@ -1203,7 +1203,7 @@ body {
 .about__quote {
   margin: 0;
   padding: 40px 40px 40px 116px;
-  background-image: url("../img/double-quotes-ic.svg");
+  background-image: url("../img/icons/double-quotes-ic.svg");
   background-position: top 40px left 40px;
   background-size: 64px 64px;
   background-repeat: no-repeat;
@@ -1596,7 +1596,7 @@ body {
   bottom: -74px;
   width: 38px;
   height: 38px;
-  background-image: url("../img/black-arrow.svg");
+  background-image: url("../img/icons/black-arrow.svg");
   background-position: center;
   background-size: 38px;
   background-repeat: no-repeat;
@@ -1742,7 +1742,7 @@ body {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-right: 115px;
-  background-image: url("../img/testimonials-decor.png");
+  background-image: url("../img/decor/testimonials-decor.png");
   background-position: 0 0;
   background-size: 235px 242px;
   background-repeat: no-repeat;
@@ -2192,7 +2192,7 @@ body {
   line-height: 24px;
   text-transform: uppercase;
   color: #fff;
-  background-image: url("../img/link-ic.svg");
+  background-image: url("../img/icons/link-ic.svg");
   background-position: left center;
   background-size: 20px;
   background-repeat: no-repeat;

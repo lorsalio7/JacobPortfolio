@@ -30,17 +30,17 @@
     {
       "socialLink": "#",
       "socialTitle": "I'm in Behance",
-      "socialIcon": "img/behance-ic.svg"
+      "socialIcon": "img/icons/socials/behance-ic.svg"
     },
     {
       "socialLink": "#",
       "socialTitle": "I'm in Dribbble",
-      "socialIcon": "img/dribbble-ic.svg"
+      "socialIcon": "img/icons/socials/dribbble-ic.svg"
     },
     {
       "socialLink": "#",
       "socialTitle": "I'm in LinkedIn",
-      "socialIcon": "img/linkedin-ic.svg"
+      "socialIcon": "img/icons/socials/linkedin-ic.svg"
     }
   ],
   "workItems": [
@@ -48,55 +48,55 @@
       "cardLink": "#",
       "cardTitle": "Bally Website Research",
       "cardTag": "UX case study",
-      "cardImage": "img/work-1.jpg"
+      "cardImage": "img/content/works/work-1.jpg"
     },
     {
       "cardLink": "#",
       "cardTitle": "Bally Website Research",
       "cardTag": "UX case study",
-      "cardImage": "img/work-2.jpg"
+      "cardImage": "img/content/works/work-2.jpg"
     },
     {
       "cardLink": "#",
       "cardTitle": "Bally Website Research",
       "cardTag": "UX case study",
-      "cardImage": "img/work-3.jpg"
+      "cardImage": "img/content/works/work-3.jpg"
     },
     {
       "cardLink": "#",
       "cardTitle": "Bally Website Research",
       "cardTag": "UX case study",
-      "cardImage": "img/work-4.jpg"
+      "cardImage": "img/content/works/work-4.jpg"
     },
     {
       "cardLink": "#",
       "cardTitle": "Bally Website Research",
       "cardTag": "UX case study",
-      "cardImage": "img/work-1.jpg"
+      "cardImage": "img/content/works/work-1.jpg"
     },
     {
       "cardLink": "#",
       "cardTitle": "Bally Website Research",
       "cardTag": "UX case study",
-      "cardImage": "img/work-2.jpg"
+      "cardImage": "img/content/works/work-2.jpg"
     },
     {
       "cardLink": "#",
       "cardTitle": "Bally Website Research",
       "cardTag": "UX case study",
-      "cardImage": "img/work-3.jpg"
+      "cardImage": "img/content/works/work-3.jpg"
     },
     {
       "cardLink": "#",
       "cardTitle": "Bally Website Research",
       "cardTag": "UX case study",
-      "cardImage": "img/work-4.jpg"
+      "cardImage": "img/content/works/work-4.jpg"
     },
     {
       "cardLink": "#",
       "cardTitle": "Bally Website Research",
       "cardTag": "UX case study",
-      "cardImage": "img/work-4.jpg"
+      "cardImage": "img/content/works/work-4.jpg"
     }
   ]
 }
