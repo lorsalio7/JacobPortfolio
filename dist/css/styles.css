@@ -2064,7 +2064,7 @@ body {
 
 .contact-form__input:focus {
   outline: none;
-  border: 1.5px solid #fff;
+  border-bottom: 1.5px solid #141313;
 }
 
 .contact-form__input::-webkit-input-placeholder {
@@ -2180,7 +2180,7 @@ body {
 
 .contact-form__textarea:focus {
   outline: none;
-  border: 1.5px solid #fff;
+  border-bottom: 1.5px solid #141313;
 }
 
 .contact-form__attach-file-label {
